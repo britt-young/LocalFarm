@@ -64,7 +64,7 @@ const ServiceSlider = () => {
               className="w-full h-64 object-cover rounded-sm"
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
+            <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-30 transition-opacity duration-300 rounded-sm" />
             {/* Text */}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3 className="text-2xl font-bold text-white">{slide.title}</h3>
