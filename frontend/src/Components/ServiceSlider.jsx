@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import produce from "../assets/imgs/produce.png";
+
 
 const settings = {
   infinite: true,
@@ -38,33 +40,35 @@ const settings = {
 };
 
 const ServiceSlider = () => {
+  const slides = [
+    { title: "Produce", image: {produce} },
+    { title: "Meat", image: "/path/to/meat.jpg" },
+    { title: "Dairy", image: "/path/to/dairy.jpg" },
+    { title: "Grains", image: "/path/to/grains.jpg" },
+    { title: "Spices", image: "/path/to/spices.jpg" },
+    { title: "Beverages", image: "/path/to/beverages.jpg" },
+    { title: "Snacks", image: "/path/to/snacks.jpg" },
+    { title: "Frozen", image: "/path/to/frozen.jpg" },
+  ];
+
   return (
-    <div className="slider-container">
+    <div className="max-w-7xl mx-auto px-4 py-8"> {/* Tailwind for container layout */}
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
+        {slides.map((slide, index) => (
+          <div key={index} className="relative group">
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-64 object-cover rounded-lg"
+            />
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
+            {/* Text */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h3 className="text-2xl font-bold text-white">{slide.title}</h3>
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
