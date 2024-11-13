@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import produce from "../assets/imgs/produce.png";
-
+import meat from "../assets/imgs/meat.png";
+import dairy from "../assets/imgs/dairy.png";
+import grain from "../assets/imgs/grain.png";
 
 const settings = {
   infinite: true,
@@ -41,10 +43,10 @@ const settings = {
 
 const ServiceSlider = () => {
   const slides = [
-    { title: "Produce", image: {produce} },
-    { title: "Meat", image: "/path/to/meat.jpg" },
-    { title: "Dairy", image: "/path/to/dairy.jpg" },
-    { title: "Grains", image: "/path/to/grains.jpg" },
+    { title: "Produce", image: produce },
+    { title: "Meat", image: meat },
+    { title: "Dairy", image: dairy },
+    { title: "Grains", image: grain },
     { title: "Spices", image: "/path/to/spices.jpg" },
     { title: "Beverages", image: "/path/to/beverages.jpg" },
     { title: "Snacks", image: "/path/to/snacks.jpg" },
@@ -59,7 +61,7 @@ const ServiceSlider = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-64 object-cover rounded-sm"
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
