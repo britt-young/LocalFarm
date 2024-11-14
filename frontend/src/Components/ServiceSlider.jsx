@@ -7,12 +7,18 @@ import meat from "../assets/imgs/meat.png";
 import dairy from "../assets/imgs/dairy.png";
 import grain from "../assets/imgs/grain.png";
 
+import { RxDoubleArrowLeft , RxDoubleArrowRight } from "react-icons/rx";
+
+
+
 const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 4,
   initialSlide: 0,
+  nextArrow: <RxDoubleArrowRight />,
+  prevArrow: <RxDoubleArrowLeft />,
   responsive: [
     {
       breakpoint: 1024,
@@ -20,7 +26,7 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -54,7 +60,8 @@ const ServiceSlider = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8"> {/* Tailwind for container layout */}
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      {/* Tailwind for container layout */}
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className="relative group">
