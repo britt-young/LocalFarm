@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   return (
 
-<div class="h-full flex justify-center items-center bg-sky-600">
+<div class="h-full flex justify-center items-center bg-lime-800">
 
 <div className= "m-20">
 <h5 class="mb-4 text-xl font-semibold">James Lesterman</h5>
