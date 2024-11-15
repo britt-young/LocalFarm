@@ -13,10 +13,11 @@ const Home = () => {
       <Header />
       <Intro />
       <ServiceSlider />
-      <Testimonials />
+      <Testimonials className="" />
       <Footer />
     </div>
   )
 }
 
 export default Home
+

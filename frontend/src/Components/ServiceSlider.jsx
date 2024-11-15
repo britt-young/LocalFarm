@@ -61,6 +61,8 @@ const ServiceSlider = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <p className="text-center text-2xl font-light text-black uppercase">
+        Click a service below to learn more</p>
       {/* Tailwind for container layout */}
       <Slider {...settings}>
         {slides.map((slide, index) => (
