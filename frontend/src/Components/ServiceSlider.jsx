@@ -12,7 +12,11 @@ import eggs from "../assets/imgs/eggs.png";
 import feed from "../assets/imgs/feed.png";
 
 const ServiceSlider = () => {
-  const navigate = useNavigate(); // Get the navigate function
+  const navigate = useNavigate();
+
+ /*  const handleClick = () => {
+    navigate(image.path); // Navigate to the path of the clicked item
+  }; */
 
   const images = [
     { src: veggies, alt: "veggies", text: "Vegetables", path: "services/veggies" },
@@ -65,7 +69,7 @@ const ServiceSlider = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-100 rounded-lg">
                   <div
                     className="text-white text-lg font-bold text-center cursor-pointer z-10"
-                    onClick={() => handleNavigate(image.path)} // Add onClick to text
+                    onClick={() => handleNavigate(image.path)}
                   >
                     {image.text}
                   </div>
