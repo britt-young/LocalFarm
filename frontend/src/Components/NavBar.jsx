@@ -7,7 +7,7 @@ initTWE({ Collapse, Dropdown });
 const NavBar = () => {
   return (
     <div>
-      {/* <!-- Main navigation container --> */}
+{/* <!-- Main navigation container --> */}
       <nav
         className="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
