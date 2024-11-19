@@ -3,13 +3,19 @@ import React from "react";
 const Testimonials = () => {
   return (
     <div className="h-full flex justify-center items-center bg-lime-800">
-      <div className="m-20">
-        <h5 className="mb-4 text-xl font-semibold">James Lesterman</h5>
-        <h6 className="mb-4 font-semibold text-white dark:white">
-          Web Developer
+      <div className="m-10 mx-60">
+        <h5 className="flex justify-center items-center text-2xl font-bold uppercase">
+          John Lesterman
+        </h5>
+        <h6 className="flex justify-center items-center mb-4 font-normal text-white dark:white uppercase">
+          Chef at
+          <span className="text-white font-bold p-2 ">
+            Parrish Farm to Table
+          </span>
+          Restaurant
         </h6>
-        <p className="mb-4 text-black dark:text-white">
-          <span className="inline-block pe-2 pr-2 [&>svg]:w-5">
+        <p className="flex justify-center items-center text-center mx-96 mb-4 text-black dark:text-white">
+          <span className="inline-block pe-4 [&>svg]:w-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -19,9 +25,16 @@ const Testimonials = () => {
               <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
             </svg>
           </span>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-          officiis hic tenetur quae quaerat ad velit ab hic tenetur
-          <span className="inline-block pe-2 pl-2 [&>svg]:w-5">
+          As a farm-to-table chef, I’m consistently impressed by the exceptional
+          quality and flavor of the ingredients from this farm. Their commitment
+          to sustainable practices and seasonal growing shines through in every
+          item, from the heirloom tomatoes and earthy greens to the sweet fruits
+          and tender, grass-fed meats. The freshness and care behind each
+          product elevate every dish, and my guests have raved about the vibrant
+          flavors. Local Farm is a key partner in my kitchen, providing top-notch
+          ingredients that align perfectly with my culinary philosophy. Highly
+          recommended!
+          <span className="inline-block ps-4 [&>svg]:w-5">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               {/* <!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
               <path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z" />
