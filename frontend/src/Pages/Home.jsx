@@ -13,7 +13,7 @@ const Home = () => {
       <Intro />
       <ServiceSlider />
       <Testimonials className="" />
-      
+      <Contact />
       <Footer />
     </div>
   )

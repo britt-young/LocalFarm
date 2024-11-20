@@ -8,13 +8,9 @@ const Testimonials = () => {
           John Lesterman
         </h5>
         <h6 className="flex justify-center items-center mb-4 font-normal text-white dark:white uppercase">
-          Chef at
-          <span className="text-white font-bold p-2 ">
-            Parrish Farm to Table
-          </span>
-          Restaurant
+          Chef at Parrish Farm to Table Restaurant
         </h6>
-        <p className="flex justify-center items-center text-center mx-96 mb-4 text-black dark:text-white">
+        <p className="flex justify-center items-center text-center  mb-4 text-black dark:text-white">
           <span className="inline-block pe-4 [&>svg]:w-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"

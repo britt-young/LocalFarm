@@ -4,7 +4,6 @@ import Home from './Home'
 import About from './About'
 import Services from './Services'
 import Events from './Events'
-import Contact from './Contact'
 import Privacy from './Privacy'
 import Terms from './Terms'
 
@@ -27,7 +26,6 @@ const Router = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/events" element={<Events />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} /> 
 
