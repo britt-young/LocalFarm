@@ -28,7 +28,9 @@ const Contact = () => {
         <div className="block rounded-lg bg-[hsla(0,0%,100%,0.4)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
           <div className="flex flex-wrap justify-center">
             <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-            <h2 className= "font-semibold mb-10 flex justify-center text-xl">Contact Us Today</h2>
+              <h2 className="font-semibold mb-10 flex justify-center text-xl">
+                Contact Us Today!
+              </h2>
               <form onSubmit={handleSubmit}>
                 <div className="relative mb-6">
                   <input

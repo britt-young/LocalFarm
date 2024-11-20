@@ -56,7 +56,7 @@ const ServiceSlider = () => {
 
   return (
     <div className="relative w-full max-w-[900px] mx-auto overflow-hidden mb-20">
-      <div className="carousel flex transition-transform duration-300 ease-in-out">
+      <div className="carousel flex transition-transform duration-100 ease-in-out">
         <div className="carousel-images flex">
           {visibleImages.map((image, index) => (
             <div key={index} className="relative w-1/2 md:w-1/4 p-1">
