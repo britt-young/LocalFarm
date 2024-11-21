@@ -25,7 +25,7 @@ const Header = () => {
                 <h3 className="mb-8 text-3xl font-bold">Growing for you since 1982</h3>
                 <button
                   type="button"
-                  className="inline-block rounded border-4 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-semibold uppercase tracking-widest leading-normal text-white transition duration-150 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white"
+                  className="inline-block rounded border-4 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-semibold uppercase tracking-widest leading-normal text-white transition duration-150 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
                   data-twe-ripple-init=""
                   data-twe-ripple-color="light"
                   onClick={handleClick}
