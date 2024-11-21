@@ -77,7 +77,7 @@ const Footer = () => {
           {/* <!-- TW Elements section --> */}
           <div className="">
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
-              <span className="me-3 [&>svg]:h-4 [&>svg]:w-4">
+              {/* <span className="me-3 [&>svg]:h-4 [&>svg]:w-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -85,15 +85,25 @@ const Footer = () => {
                 >
                   <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                 </svg>
-              </span>
-              TW Elements
+              </span> */}
+              Proud partners of the community
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
+            <ul className="w-96 text-surface dark:text-white">
+              <li className=" w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+                An item
+              </li>
+              <li className="w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+                A second item
+              </li>
+              <li className="w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+                A third item
+              </li>
+              <li className="w-full py-2">
+                A fourth item
+              </li>
+            </ul>
           </div>
-          
+
           {/* <!-- Useful links section --> */}
           <div>
             <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
