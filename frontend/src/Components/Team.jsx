@@ -42,7 +42,10 @@ const Team = () => {
               alt="farmer"
             />
             <div className="flex flex-col justify-start p-6">
-              <h5 className="mb-2 text-xl font-medium">Jane Bennett</h5>
+              <h5 className="text-xl font-medium">Jane Bennett</h5>
+              <h4 className="mb-2 text-base font-semibold">
+                Produce Professional
+              </h4>
               <p className="mb-4 text-base">
                 Jane is a hands-on partner on the farm, where she helps manage
                 everything from crop planning to caring for their livestock.
@@ -66,7 +69,10 @@ const Team = () => {
               alt="farmer"
             />
             <div className="flex flex-col justify-start p-6">
-              <h5 className="mb-2 text-xl font-medium">Jane Bennett</h5>
+              <h5 className="text-xl font-medium">Sara-Ann James</h5>
+              <h4 className="mb-2 text-base font-semibold">
+                Veternarian
+              </h4>
               <p className="mb-4 text-base">
                 Jane is a hands-on partner on the farm, where she helps manage
                 everything from crop planning to caring for their livestock.
@@ -90,7 +96,10 @@ const Team = () => {
               alt="farmer"
             />
             <div className="flex flex-col justify-start p-6">
-              <h5 className="mb-2 text-xl font-medium">Jane Bennett</h5>
+              <h5 className="text-xl font-medium">Ray Huddleson</h5>
+              <h4 className="mb-2 text-base font-semibold">
+                Agricultural Specialist
+              </h4>
               <p className="mb-4 text-base">
                 Jane is a hands-on partner on the farm, where she helps manage
                 everything from crop planning to caring for their livestock.
