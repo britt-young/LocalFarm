@@ -7,7 +7,7 @@ initTWE({ Collapse, Dropdown });
 const NavBar = () => {
   return (
     <div>
-{/* <!-- Main navigation container --> */}
+      {/* <!-- Main navigation container --> */}
       <nav
         className="relative flex w-full flex-nowrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start lg:py-4"
         data-twe-navbar-ref
@@ -56,7 +56,7 @@ const NavBar = () => {
                 data-twe-nav-item-ref
               >
                 <a
-                  className="text-black dark:text-white"
+                  className="p-0 text-black/60 transition duration-200 hover:text-black hover:ease-in-out focus:text-black active:text-black motion-reduce:transition-none dark:text-white/60 dark:hover:text-white dark:focus:text-white dark:active:text-white lg:px-2"
                   aria-current="page"
                   href="/"
                   data-twe-nav-link-ref
@@ -70,7 +70,7 @@ const NavBar = () => {
                 data-twe-nav-item-ref
               >
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  className="p-0 text-black/60 transition duration-200 hover:text-black hover:ease-in-out focus:text-black active:text-black motion-reduce:transition-none dark:text-white/60 dark:hover:text-white dark:focus:text-white dark:active:text-white lg:px-2"
                   href="/about"
                   data-twe-nav-link-ref
                 >
@@ -83,7 +83,7 @@ const NavBar = () => {
                 data-twe-nav-item-ref
               >
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  className="p-0 text-black/60 transition duration-200 hover:text-black hover:ease-in-out focus:text-black active:text-black motion-reduce:transition-none dark:text-white/60 dark:hover:text-white dark:focus:text-white dark:active:text-white lg:px-2"
                   href="/events"
                   data-twe-nav-link-ref
                 >
@@ -96,7 +96,7 @@ const NavBar = () => {
                 data-twe-nav-item-ref
               >
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                  className="p-0 text-black/60 transition duration-200 hover:text-black hover:ease-in-out focus:text-black active:text-black motion-reduce:transition-none dark:text-white/60 dark:hover:text-white dark:focus:text-white dark:active:text-white lg:px-2"
                   href="/services"
                   data-twe-nav-link-ref
                 >
