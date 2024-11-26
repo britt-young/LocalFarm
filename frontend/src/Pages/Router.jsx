@@ -37,7 +37,7 @@ const Router = () => {
             <Route path="services/spices" element={<Spices />} /> 
             <Route path="services/grains" element={<Grains />} />
             <Route path="services/feed" element={<Feed />} /> 
-            <Route path="*" element={<ErrorPg />} />           
+            <Route path="*" element={<ErrorPg />} />          
         </Routes>
     </div>
   )
