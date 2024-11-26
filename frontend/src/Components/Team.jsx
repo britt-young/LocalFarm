@@ -32,11 +32,18 @@ const Team = () => {
               alt="farmer"
             />
             <div className="flex flex-col justify-start p-6">
-              <h5 className="mb-2 text-xl font-medium">John Doe</h5>
+              <h5 className="text-xl font-medium">John "Jack" Bennett</h5>
+              <h4 className="mb-2 text-base font-semibold">
+                Owner of Local Farm
+              </h4>
               <p className="mb-4 text-base">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Growing up on his family’s organic farm in Willow Creek, Jack
+                learned the values of hard work and land stewardship, which he
+                carries into his own farming practice today. Committed to giving
+                back, he donates a portion of his harvest to local food banks
+                and works to create a stronger, more sustainable local food
+                system. Through his farm, Jack hopes to pass on his legacy of
+                care for the land and the community to future generations.
               </p>
             </div>
           </div>
@@ -48,11 +55,19 @@ const Team = () => {
               alt="farmer"
             />
             <div className="flex flex-col justify-start p-6">
-              <h5 className="mb-2 text-xl font-medium">Jane Doe</h5>
+              <h5 className="mb-2 text-xl font-medium">Jane Bennett</h5>
               <p className="mb-4 text-base">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Jane is a hands-on partner on the farm, where she helps manage
+                everything from crop planning to caring for their livestock.
+                She’s particularly passionate about food education, often
+                hosting workshops for local families on how to cook with fresh,
+                seasonal ingredients. Emily also plays a key role in their
+                community involvement, organizing charity events and
+                coordinating farm tours to educate others about sustainable
+                agriculture. Together with Jack, she is committed to building a
+                healthier, more connected community, ensuring that the next
+                generation grows up with a deep appreciation for the land and
+                the food it provides.
               </p>
             </div>
           </div>
