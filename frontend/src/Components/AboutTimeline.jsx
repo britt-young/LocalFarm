@@ -3,7 +3,7 @@ import React from "react";
 const AboutTimeline = () => {
   return (
     <div className="flex flex-col m-20">
-      <h2 className="flex justify-center">Farm to Table Timeline</h2>
+      <h2 className="flex justify-center text-5xl m-5">Farm to Table Timeline</h2>
       <div className='flex justify-center'>
         <ol className="items-center sm:flex">
           <li className="relative mb-6 sm:mb-0">
