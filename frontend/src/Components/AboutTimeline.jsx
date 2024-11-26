@@ -2,15 +2,17 @@ import React from "react";
 
 const AboutTimeline = () => {
   return (
-    <div className="flex flex-col m-20">
-      <h2 className="flex justify-center text-5xl m-5">Farm to Table Timeline</h2>
-      <div className='flex justify-center'>
+    <div className="flex flex-col my-10 bg-lime-800">
+      <h2 className="flex justify-center text-5xl mt-10">
+        Farm to Table Timeline
+      </h2>
+      <div className="flex justify-center m-10">
         <ol className="items-center sm:flex">
-          <li className="relative mb-6 sm:mb-0">
+          <li className="relative sm:mb-0">
             <div className="flex items-center">
               <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                 <svg
-                  className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                  className="w-2.5 h-2.5 text-black dark:text-blue-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -22,15 +24,20 @@ const AboutTimeline = () => {
               <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
             </div>
             <div className="mt-3 sm:pe-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-white dark:text-white">
                 Flowbite Library v1.0.0
               </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="block mb-5 text-sm font-normal leading-none text-yellow-500 dark:text-gray-500">
                 Released on December 2, 2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+              <p className="text-base font-normal text-black dark:text-gray-400">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
             </div>
           </li>
@@ -38,7 +45,7 @@ const AboutTimeline = () => {
             <div className="flex items-center">
               <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                 <svg
-                  className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                  className="w-2.5 h-2.5 text-black dark:text-blue-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -50,15 +57,20 @@ const AboutTimeline = () => {
               <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
             </div>
             <div className="mt-3 sm:pe-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-white dark:text-white">
                 Flowbite Library v1.2.0
               </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="block mb-5 text-sm font-normal leading-none text-yellow-500 dark:text-gray-500">
                 Released on December 23, 2021
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+              <p className="text-base font-normal text-black dark:text-gray-400">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
             </div>
           </li>
@@ -66,7 +78,7 @@ const AboutTimeline = () => {
             <div className="flex items-center">
               <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
                 <svg
-                  className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+                  className="w-2.5 h-2.5 text-black dark:text-blue-300"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -78,15 +90,20 @@ const AboutTimeline = () => {
               <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
             </div>
             <div className="mt-3 sm:pe-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-white dark:text-white">
                 Flowbite Library v1.3.0
               </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="block mb-5 text-sm font-normal leading-none text-yellow-500 dark:text-gray-500">
                 Released on January 5, 2022
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                Get started with dozens of web components and interactive
-                elements.
+              <p className="text-base font-normal text-black dark:text-gray-400">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
             </div>
           </li>

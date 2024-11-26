@@ -4,11 +4,11 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
       <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
-        <div className="me-12 hidden lg:block">
-          <span>Get connected with us on social networks:</span>
+        <div className="me-12 hidden lg:block text-[#933728]">
+          <span>Stay connected on all our social media platforms:</span>
         </div>
         {/* <!-- Social network icons container --> */}
-        <div className="flex justify-center">
+        <div className="flex justify-center text-[#933728]">
           <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
