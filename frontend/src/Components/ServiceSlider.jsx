@@ -47,6 +47,7 @@ const ServiceSlider = () => {
     images[(currentIndex + 1) % images.length],
     images[(currentIndex + 2) % images.length],
     images[(currentIndex + 3) % images.length],
+    images[(currentIndex + 4) % images.length],
   ];
 
   // Function to handle navigation when text is clicked
@@ -55,11 +56,11 @@ const ServiceSlider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[900px] mx-auto overflow-hidden mb-20">
+    <div className="relative w-full max-w-screen-xl mx-auto overflow-hidden mb-20">
       <div className="carousel flex transition-transform duration-100 ease-in-out">
         <div className="carousel-images flex">
           {visibleImages.map((image, index) => (
-            <div key={index} className="relative w-1/2 md:w-1/4 p-1">
+            <div key={index} className="relative w-full md:w-1/4 p-1">
               <div className="relative w-full h-full">
                 <img
                   src={image.src}
