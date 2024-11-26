@@ -1,14 +1,19 @@
 import React from "react";
+import fair from '../assets/imgs/fair.jpg';
+import fest from '../assets/imgs/fallfest.jpg';
+import market from '../assets/imgs/market.jpg';
+import rodeo from '../assets/imgs/rodeo.jpg'
 
 const EventsGrid = () => {
   return (
     <div>
-      <div className="grid-cols-1 sm:grid md:grid-cols-3 ">
+      <div className="grid-cols-1 sm:grid md:grid-cols-3 m-20">
+        {/* First Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
             <img
               className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/041.webp"
+              src={fair}
               alt="Hollywood Sign on The Hill"
             />
           </a>
@@ -23,11 +28,12 @@ const EventsGrid = () => {
             </p>
           </div>
         </div>
+        {/* Second Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
             <img
               className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+              src={rodeo}
               alt="Palm Springs Road"
             />
           </a>
@@ -42,11 +48,12 @@ const EventsGrid = () => {
             </p>
           </div>
         </div>
+        {/* Third Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
             <img
               className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/044.webp"
+              src={market}
               alt="Skyscrapers"
             />
           </a>
@@ -60,11 +67,12 @@ const EventsGrid = () => {
             </p>
           </div>
         </div>
+        {/* Fourth Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
             <img
               className="rounded-t-lg"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+              src={fest}
               alt="Los Angeles Skyscrapers"
             />
           </a>
