@@ -4,7 +4,7 @@ import EventsGrid from '../Components/EventsGrid'
 
 const Events = () => {
   return (
-    <div>
+    <div className='flex'>
       <EventCalendar />
       <EventsGrid />
     </div>
