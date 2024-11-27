@@ -1,8 +1,11 @@
 import React from 'react'
+import PrivacyStatement from '../Components/PrivacyStatement'
 
 const Privacy = () => {
   return (
-    <div>Privacy</div>
+    <div className='mx-40'>
+      <PrivacyStatement />
+    </div>
   )
 }
 
