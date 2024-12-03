@@ -1,8 +1,8 @@
 import React from "react";
-import fair from '../assets/imgs/fair.jpg';
-import fest from '../assets/imgs/fallfest.jpg';
-import market from '../assets/imgs/market.jpg';
-import rodeo from '../assets/imgs/rodeo.jpg'
+import fair from "../assets/imgs/fair.jpg";
+import fest from "../assets/imgs/fallfest.jpg";
+import market from "../assets/imgs/market.jpg";
+import rodeo from "../assets/imgs/rodeo.jpg";
 
 const EventsGrid = () => {
   return (
@@ -11,15 +11,11 @@ const EventsGrid = () => {
         {/* First Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src={fair}
-              alt="Hollywood Sign on The Hill"
-            />
+            <img className="rounded-t-lg" src={fair} alt="County Fair" />
           </a>
           <div className="p-6">
             <h5 className="mb-2 text-xl font-medium leading-tight">
-              Card title
+              Sopchoppy County Fair
             </h5>
             <p className="mb-4 text-base">
               This is a longer card with supporting text below as a natural
@@ -31,15 +27,11 @@ const EventsGrid = () => {
         {/* Second Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src={rodeo}
-              alt="Palm Springs Road"
-            />
+            <img className="rounded-t-lg" src={rodeo} alt="Rodeo" />
           </a>
           <div className="p-6">
             <h5 className="mb-2 text-xl font-medium leading-tight">
-              Card title
+              Jameson State Finals Rodeo
             </h5>
             <p className="mb-4 text-base">
               This is a longer card with supporting text below as a natural
@@ -51,15 +43,11 @@ const EventsGrid = () => {
         {/* Third Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src={market}
-              alt="Skyscrapers"
-            />
+            <img className="rounded-t-lg" src={market} alt="Farmers Market" />
           </a>
           <div className="p-6">
             <h5 className="mb-2 text-xl font-medium leading-tight">
-              Card title
+              Tallahassee Farmers Market
             </h5>
             <p className="mb-4 text-base">
               This is a longer card with supporting text below as a natural
@@ -70,15 +58,11 @@ const EventsGrid = () => {
         {/* Fourth Card */}
         <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
           <a href="#!">
-            <img
-              className="rounded-t-lg"
-              src={fest}
-              alt="Los Angeles Skyscrapers"
-            />
+            <img className="rounded-t-lg" src={fest} alt="Fall Festival" />
           </a>
           <div className="p-6">
             <h5 className="mb-2 text-xl font-medium leading-tight">
-              Card title
+              Autumn Fest
             </h5>
             <p className="mb-4 text-base">
               This is a longer card with supporting text below as a natural
