@@ -74,7 +74,7 @@ function classNames(...classes) {
 }
 
 
-const EventCalendar = () => {
+const EventFilter = () => {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
   return (
@@ -318,4 +318,4 @@ const EventCalendar = () => {
   )
 };
 
-export default EventCalendar;
+export default EventFilter;

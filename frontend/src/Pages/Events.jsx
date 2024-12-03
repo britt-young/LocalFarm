@@ -1,5 +1,5 @@
 import React from "react";
-import EventCalendar from "../Components/EventCalendar";
+import EventFilter from "../Components/EventFilter";
 import EventsGrid from "../Components/EventsGrid";
 
 const Events = () => {
@@ -7,7 +7,7 @@ const Events = () => {
     <div>
       <h2 className="flex justify-center mt-20 text-5xl">Local Farm Event Pop-Ups</h2>
       <div className="flex">
-        <EventCalendar />
+        <EventFilter />
         <EventsGrid />
       </div>
     </div>
