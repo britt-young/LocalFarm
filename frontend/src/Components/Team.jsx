@@ -16,7 +16,7 @@ const Team = () => {
       <div className="divide-y-2 divide-solid divide-lime-900 ">
         <h2 className="flex justify-center m-5 text-5xl"> Meet The Team</h2>
         <div
-          data-aos="fade-up"
+        data-aos="fade-up"
           className="grid lg:grid-cols-3 grid-cols-1 justify-items-center mx-20"
         >
           {/* First Card */}
