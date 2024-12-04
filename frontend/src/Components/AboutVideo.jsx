@@ -6,9 +6,9 @@ const AboutVideo = () => {
     <div>
       <video
         className="shadow-lg object-cover"
-        autoPlay="true"
-        loop="true"
-        muted="true"
+        autoPlay={true}
+        loop={true}
+        muted={true}
         style={{ height: "800px", width: "100%" }}
       >
         <source src={video} type="video/mp4" />

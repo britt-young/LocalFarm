@@ -1,14 +1,17 @@
 import React from "react";
+import AOS from 'aos';
 import john from "../assets/imgs/farmerjohn.jpg";
 import jane from "../assets/imgs/farmerjane.jpg";
 import sara from "../assets/imgs/farmersara.jpg";
 import ray from "../assets/imgs/farmerray.png";
 
+AOS.init();
+
 const Team = () => {
   return (
     <div>
       {/* Team About*/}
-      <div className="divide-y-2 divide-solid divide-lime-900 ">
+      <div data-aos="fade-up" className="divide-y-2 divide-solid divide-lime-900 ">
         <h2 className="flex justify-center m-5 text-5xl"> Meet The Team</h2>
         <div className="flex justify-center flex-wrap mx-20">
           {/* First Card */}
@@ -35,7 +38,7 @@ const Team = () => {
             </div>
           </div>
           {/* Second Card */}
-          <div className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
+          <div data-aos="fade-up" className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
             <img
               className="h-100 w-full rounded-t-lg object-cover md:h-auto md:w-60 md:!rounded-none md:!rounded-s-lg"
               src={jane}
@@ -62,7 +65,7 @@ const Team = () => {
             </div>
           </div>
           {/* Third Card */}
-          <div className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
+          <div data-aos="fade-up" className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
             <img
               className="h-100 w-full rounded-t-lg object-cover md:h-auto md:w-60 md:!rounded-none md:!rounded-s-lg"
               src={sara}
@@ -89,7 +92,7 @@ const Team = () => {
             </div>
           </div>
           {/* Fourth Card */}
-          <div className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
+          <div data-aos="fade-up" className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
             <img
               className="h-100 w-full rounded-t-lg object-cover md:h-auto md:w-60 md:!rounded-none md:!rounded-s-lg"
               src={ray}
