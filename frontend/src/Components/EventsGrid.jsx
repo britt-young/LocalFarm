@@ -1,9 +1,9 @@
 import React from "react";
-import AOS from 'aos';
 import fair from "../assets/imgs/fair.jpg";
 import fest from "../assets/imgs/fallfest.jpg";
 import market from "../assets/imgs/market.jpg";
 import rodeo from "../assets/imgs/rodeo.jpg";
+import AOS from 'aos';
 
 AOS.init();
 

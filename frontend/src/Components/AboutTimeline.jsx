@@ -10,7 +10,7 @@ const AboutTimeline = () => {
         Farm to Table Timeline
       </h2>
       <div className="flex justify-center m-10">
-        <ol data-aos="fade-right" className="items-center sm:flex">
+        <ol data-aos="fade-right" data-aos-duration="1000" className="items-center sm:flex">
           <li className="relative sm:mb-0">
             <div className="flex items-center">
               <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">

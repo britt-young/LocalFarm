@@ -1,9 +1,12 @@
 import React from "react";
+import AOS from 'aos';
+
+AOS.init();
 
 const Testimonials = () => {
   return (
     <div className="h-full flex justify-center items-center bg-lime-800">
-      <div className="m-10 mx-60">
+      <div data-aos="zoom-in" data-aos-duration="1000" className="m-10 mx-60">
         <h5 className="flex justify-center items-center text-2xl font-bold uppercase">
           John Lesterman
         </h5>
