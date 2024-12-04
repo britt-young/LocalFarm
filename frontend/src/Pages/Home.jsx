@@ -4,7 +4,6 @@ import Intro from '../Components/Intro'
 import ServiceSlider from '../Components/ServiceSlider'
 import Testimonials from '../Components/Testimonials'
 import Contact from '../Components/Contact'
-import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -14,7 +13,7 @@ const Home = () => {
       <ServiceSlider />
       <Testimonials className="" />
       <Contact />
-      <Footer />
+  
     </div>
   )
 }
