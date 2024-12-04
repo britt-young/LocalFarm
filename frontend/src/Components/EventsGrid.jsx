@@ -6,74 +6,71 @@ import rodeo from "../assets/imgs/rodeo.jpg";
 
 const EventsGrid = () => {
   return (
-    <div>
-      <div className="grid-cols-1 sm:grid md:grid-cols-3  m-10">
-        {/* First Card */}
-        <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img className="rounded-t-lg" src={fair} alt="County Fair" />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight">
-              Sopchoppy County Fair
-            </h5>
-            <p className="mb-4 text-base">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+    <div className='flex flex-col justify-center m-auto'>
+        <h1 className='font-bold text-4xl'>Upcoming Events at George Mason University</h1>
+        <div className="m-5 bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
+          <div className="bg-blue-600 text-white p-6 text-2xl">
+            <div className="flex flex-col items-center">
+              <div className="day">15</div>
+              <div className="font-bold">MAY</div>
+            </div>
+          </div>
+          <div className="px-10">
+            <div className="font-bold text-lg pb-1">Pre-Mason Day</div>
+            <div className="text-md">
+              Early celebration in the Corner Pocket
+            </div>
           </div>
         </div>
-        {/* Second Card */}
-        <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img className="rounded-t-lg" src={rodeo} alt="Rodeo" />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight">
-              Jameson State Finals Rodeo
-            </h5>
-            <p className="mb-4 text-base">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+
+        <div className="m-5 bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
+          <div className="bg-blue-600 text-white p-6 text-2xl">
+            <div className="flex flex-col items-center">
+              <div className="day">15</div>
+              <div className="font-bold">MAY</div>
+            </div>
+          </div>
+          <div className="px-10">
+            <div className="font-bold text-lg pb-1">Pre-Mason Day</div>
+            <div className="text-md">
+              Early celebration in the Corner Pocket
+            </div>
           </div>
         </div>
-        {/* Third Card */}
-        <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img className="rounded-t-lg" src={market} alt="Farmers Market" />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight">
-              Tallahassee Farmers Market
-            </h5>
-            <p className="mb-4 text-base">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
+
+        <div className="m-5 bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
+          <div className="bg-blue-600 text-white p-6 text-2xl">
+            <div className="flex flex-col items-center">
+              <div className="day">15</div>
+              <div className="font-bold">MAY</div>
+            </div>
+          </div>
+          <div className="px-10">
+            <div className="font-bold text-lg pb-1">Pre-Mason Day</div>
+            <div className="text-md">
+              Early celebration in the Corner Pocket
+            </div>
           </div>
         </div>
-        {/* Fourth Card */}
-        <div className="mx-3 mt-6 flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0">
-          <a href="#!">
-            <img className="rounded-t-lg" src={fest} alt="Fall Festival" />
-          </a>
-          <div className="p-6">
-            <h5 className="mb-2 text-xl font-medium leading-tight">
-              Autumn Fest
-            </h5>
-            <p className="mb-4 text-base">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+
+        <div className="m-5 bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
+          <div className="bg-blue-600 text-white p-6 text-2xl">
+            <div className="flex flex-col items-center">
+              <div className="day">15</div>
+              <div className="font-bold">MAY</div>
+            </div>
+          </div>
+          <div className="px-10">
+            <div className="font-bold text-lg pb-1">Pre-Mason Day</div>
+            <div className="text-md">
+              Early celebration in the Corner Pocket
+            </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
 
 export default EventsGrid;
+
+
