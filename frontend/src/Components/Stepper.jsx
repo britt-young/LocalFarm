@@ -29,12 +29,12 @@ const Stepper = () => {
             return (
               <div
                 key={step}
-                className={`w-full flex items-center space-x-4 ${step < currentStep ? 'text-lime-500' : ''} ${step === currentStep ? 'text-lime-700 font-semibold' : ''} ${step > currentStep ? 'text-gray-400' : ''}`}
+                className={`w-full flex items-center space-x-4 ${step < currentStep ? 'text-lime-600' : ''} ${step === currentStep ? 'text-lime-700 font-semibold' : ''} ${step > currentStep ? 'text-gray-400' : ''}`}
               >
                 <div
                   onClick={() => setCurrentStep(step)} // Set the current step when clicked
                   className={`w-8 h-8 rounded-full flex items-center justify-center text-white font-semibold cursor-pointer
-                    ${step < currentStep ? 'bg-lime-500' : ''}
+                    ${step < currentStep ? 'bg-lime-600' : ''}
                     ${step === currentStep ? 'bg-lime-700' : ''}
                     ${step > currentStep ? 'bg-gray-300' : ''}
                     transition-all duration-300`}

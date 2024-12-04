@@ -7,7 +7,7 @@ const MissionStatement = () => {
     <div className=''>
       {/* Values/Mission About*/}
       <div className="divide-y-2 divide-solid divide-lime-900">
-        <h2 className="flex justify-center m-5 text-5xl">Our Mission</h2>
+        <h2 className="flex justify-center m-5 text-5xl">Connecting our community with fresh, healthy produce and proteins </h2>
         <div className="mx-20">
           <p className="m-4 px-2 indent-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
