@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
+import Stepper from "./Stepper";
 
 const MissionStatement = () => {
+
   return (
-    <div>
+    <div className=''>
       {/* Values/Mission About*/}
       <div className="divide-y-2 divide-solid divide-lime-900">
         <h2 className="flex justify-center m-5 text-5xl">Our Mission</h2>
@@ -18,6 +20,8 @@ const MissionStatement = () => {
           </p>
         </div>
       </div>
+      {/* Farm-to-Table */}
+      <Stepper />
     </div>
   );
 };

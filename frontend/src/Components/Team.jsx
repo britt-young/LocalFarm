@@ -17,7 +17,7 @@ const Team = () => {
         <h2 className="flex justify-center m-5 text-5xl"> Meet The Team</h2>
         <div
           data-aos="fade-up"
-          className="grid lg:grid-cols-3 grid-cols-1 justify-items-center "
+          className="grid lg:grid-cols-3 grid-cols-1 justify-items-center mx-20"
         >
           {/* First Card */}
           <div className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
