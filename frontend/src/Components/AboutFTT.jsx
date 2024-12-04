@@ -3,11 +3,11 @@ import AOS from 'aos';
 
 AOS.init();
 
-const AboutTimeline = () => {
+const AboutFTT = () => {
   return (
     <div className="flex flex-col my-10 bg-lime-800">
       <h2 className="flex justify-center text-5xl mt-10">
-        Farm to Table Timeline
+        Farm-to-Table Benefits
       </h2>
       <div className="flex justify-center m-10">
         <ol data-aos="fade-right" data-aos-duration="1000" className="items-center sm:flex">
@@ -28,7 +28,7 @@ const AboutTimeline = () => {
             </div>
             <div className="mt-3 sm:pe-8">
               <h3 className="text-lg font-semibold text-white dark:text-white">
-                Flowbite Library v1.0.0
+              Enhanced Food Security 
               </h3>
               <time className="block mb-5 text-sm font-normal leading-none text-yellow-500 dark:text-gray-500">
                 Released on December 2, 2021
@@ -61,7 +61,7 @@ const AboutTimeline = () => {
             </div>
             <div className="mt-3 sm:pe-8">
               <h3 className="text-lg font-semibold text-white dark:text-white">
-                Flowbite Library v1.2.0
+              Less Physical Distance
               </h3>
               <time className="block mb-5 text-sm font-normal leading-none text-yellow-500 dark:text-gray-500">
                 Released on December 23, 2021
@@ -116,4 +116,4 @@ const AboutTimeline = () => {
   );
 };
 
-export default AboutTimeline;
+export default AboutFTT;

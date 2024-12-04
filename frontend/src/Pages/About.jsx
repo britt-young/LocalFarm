@@ -2,7 +2,8 @@ import React from 'react'
 import AboutVideo from '../Components/AboutVideo'
 import MissionStatement from '../Components/MissionStatement'
 import Team from '../Components/Team'
-import AboutTimeline from '../Components/AboutTimeline'
+import AboutAccordion from '../Components/AboutAccordion'
+
 
 
 export const About = () => {
@@ -11,7 +12,7 @@ export const About = () => {
       <AboutVideo />
       <MissionStatement />
       <Team />
-      <AboutTimeline />
+      <AboutAccordion />
     </div>
   )
 }
