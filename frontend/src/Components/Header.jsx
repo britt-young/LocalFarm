@@ -30,7 +30,7 @@ const Header = () => {
                   data-twe-ripple-color="light"
                   onClick={handleClick}
                 >
-                  find a location near you
+                  Current pop-up locations
                 </button>
               </div>
             </div>

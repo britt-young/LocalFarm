@@ -26,10 +26,67 @@ const Contact = () => {
       </div>
       <div className="container mx-auto px-6 md:px-12">
         <div className="block rounded-lg bg-[hsla(0,0%,100%,0.4)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
-          <div className="flex flex-wrap justify-center">
-            <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Contact Card */}
+            <div className="w-full mb-12 md:mb-0">
               <h2 className="font-semibold mb-10 flex justify-center text-xl">
-                Contact Us Today!
+                Visit us!
+              </h2>
+              <div className="block max-w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+                <div className="p-6 mb-2">
+                  <h5 className="mb-1 text-xl font-medium leading-tight ">
+                    Local Grocery
+                  </h5>
+                  <h6 className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
+                    1234 Main St, Tallahassee, FL 32301
+                  </h6>
+                  <p className="mb-4 text-base leading-normal">
+                    Selected stock of our favorite products, including fresh
+                    produce and dairy
+                  </p>
+                </div>
+              </div>
+              {/* Contact Card */}
+              <div className="w-full mb-12 md:mb-0">
+                <div className="block max-w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+                  <div className="p-6 mb-2">
+                    <h5 className="mb-1 text-xl font-medium leading-tight ">
+                      Market Booth
+                    </h5>
+                    <h6 className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
+                      Booth #1111, Town Sqaure
+                    </h6>
+                    <p className="mb-4 text-base leading-normal">
+                      Limited selection of our most popular products
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* Contact Card */}
+              <div className="w-full mb-12 md:mb-0">
+                <div className="block max-w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+                  <div className="p-6">
+                    <h5 className="mb-1 text-xl font-medium leading-tight ">
+                      Pop-Up Stand
+                    </h5>
+                    <h6 className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
+                      Location Varies, be sure to check our current location by clicking below
+                    </h6>
+                    <a
+                      type="button"
+                      href="#"
+                      className="uppercase pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400"
+                    >
+                      Current pop-up locations
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Subscribe Contact Form */}
+            <div className="w-full">
+              <h2 className="font-semibold mb-10 flex justify-center text-xl">
+                Subscribe to our Events Newsletter
               </h2>
               <form onSubmit={handleSubmit}>
                 <div className="relative mb-6">
@@ -86,7 +143,7 @@ const Contact = () => {
                     I agree to the processing of my personal data
                   </label>
                 </div>
-                <div className="text-center lg:text-left">
+                <div className="mt-10 text-center lg:text-left flex justify-center">
                   <button
                     type="submit"
                     className="inline-block rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-semibold uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
