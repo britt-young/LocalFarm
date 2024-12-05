@@ -11,9 +11,9 @@ const EventsGrid = () => {
   return (
     <div className="flex flex-col items-center m-auto py-20">
       {/* Title */}
-      <h1 className="font-bold text-4xl mb-10">
+      {/* <h1 className="font-bold text-4xl mb-10">
         Events Featuring Local Farm Pop-Up
-      </h1>
+      </h1> */}
       {/* Event Cards */}
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
         <div data-aos="fade-up" className="max-w-md rounded overflow-hidden shadow-lg">
