@@ -26,15 +26,24 @@ import {
 } from "@heroicons/react/20/solid";
 
 const sortOptions = [
-  { name: "Date (Ascending)", href: "#", current: true },
-  { name: "Date (Descending)", href: "#", current: false },
+  { name: "Date (Most Recent)", href: "#", current: true },
+  { name: "Date (Past Events)", href: "#", current: false },
 ];
 const subCategories = [
   { name: "Grocery Store", href: "#" },
-  { name: "Market Stand", href: "#" },
-  { name: "Pop-Ups", href: "#" },
+  { name: "Market Booth", href: "#" },
+  { name: "Pop-Up Stands", href: "#" },
 ];
 const filters = [
+  /* {
+    id: "locations",
+    name: "Locations",
+    options: [
+      { value: "grocery", label: "Grocery Store", checked: false },
+      { value: "market", label: "Market Booth", checked: false },
+      { value: "pop-up", label: "Pop-Up Stand", checked: true },
+    ],
+  }, */
   {
     id: "details",
     name: "Event Details",
