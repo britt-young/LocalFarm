@@ -90,7 +90,7 @@ const NavBar = () => {
                   Event Schedule
                 </a>
               </li>
-              {/* <!-- Services Link --> */}
+              {/* <!-- Products Link --> */}
               <li
                 className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
                 data-twe-nav-item-ref
@@ -100,7 +100,7 @@ const NavBar = () => {
                   href="/services"
                   data-twe-nav-link-ref
                 >
-                  Our Services
+                  Our Products
                 </a>
               </li>
             </ul>
