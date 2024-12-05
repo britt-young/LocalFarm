@@ -7,7 +7,7 @@ const MissionStatement = () => {
       {/* Values/Mission About*/}
       <div className="divide-y-2 divide-solid divide-lime-900 mx-20">
         <h2 className="flex justify-center m-5 text-5xl">
-          Our "farm-to-table" Mission
+          Our Mission
         </h2>
         <div className="px-10">
           <p className="text-lg m-4 px-2 indent-10">
