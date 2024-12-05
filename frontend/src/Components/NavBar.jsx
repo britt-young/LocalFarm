@@ -97,7 +97,7 @@ const NavBar = () => {
               >
                 <a
                   className="p-0 text-black/60 transition duration-200 hover:text-black hover:ease-in-out focus:text-black active:text-black motion-reduce:transition-none dark:text-white/60 dark:hover:text-white dark:focus:text-white dark:active:text-white lg:px-2"
-                  href="/services"
+                  href="/products"
                   data-twe-nav-link-ref
                 >
                   Our Products
