@@ -19,19 +19,14 @@ const ServiceSlider = () => {
   }; */
 
   const images = [
-    {
-      src: veggies,
-      alt: "veggies",
-      text: "Vegetables",
-      path: "services/veggies",
-    },
-    { src: meat, alt: "meat", text: "Meat", path: "services/meat" },
-    { src: dairy, alt: "dairy", text: "Dairy", path: "services/dairy" },
-    { src: eggs, alt: "eggs", text: "Eggs", path: "services/eggs" },
-    { src: fruit, alt: "fruit", text: "Fruits", path: "services/fruits" },
-    { src: spices, alt: "spices", text: "Spices", path: "services/spices" },
-    { src: grain, alt: "grain", text: "Grains", path: "services/grains" },
-    { src: feed, alt: "feed", text: "Feed", path: "services/feed" },
+    { src: veggies, alt: "veggies", text: "Vegetables"},
+    { src: meat, alt: "meat", text: "Meat" },
+    { src: dairy, alt: "dairy", text: "Dairy" },
+    { src: eggs, alt: "eggs", text: "Eggs" },
+    { src: fruit, alt: "fruit", text: "Fruits" },
+    { src: spices, alt: "spices", text: "Spices"},
+    { src: grain, alt: "grain", text: "Grains"},
+    { src: feed, alt: "feed", text: "Feed"},
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,15 +51,15 @@ const ServiceSlider = () => {
   ];
 
   // Function to handle navigation when text is clicked
-  const handleNavigate = (path) => {
-    navigate(path); // Navigate to the path of the clicked item
+  const handleNavigate = () => {
+    navigate('/products');
   };
 
   return (
     <div className="relative w-full max-w-screen-xl mx-auto overflow-hidden mb-20">
       <div className="flex flex-row">
         <button
-          className="text-black p-2 rounded-full text-2xl hover:bg-opacity-80 transition duration-500"
+          className="text-black p-2 rounded-full text-2xl"
           onClick={prevImage}
         >
           <FaArrowLeft />
@@ -79,10 +74,10 @@ const ServiceSlider = () => {
                     alt={image.alt}
                     className="w-[250px] h-[250px] object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-100 rounded-lg">
+                  <div className="absolute inset-0 bg-black bg-opacity-35 flex justify-center items-center opacity-100 rounded-lg">
                     <div
                       className="text-white text-lg font-bold text-center cursor-pointer z-10"
-                      onClick={() => handleNavigate(image.path)}
+                      onClick={() => handleNavigate()}
                     >
                       {image.text}
                     </div>
@@ -93,7 +88,7 @@ const ServiceSlider = () => {
           </div>
         </div>
         <button
-          className=" text-black p-2 rounded-full text-2xl hover:bg-opacity-80 transition duration-500"
+          className=" text-black p-2 rounded-full text-2xl"
           onClick={nextImage}
         >
           <FaArrowRight />

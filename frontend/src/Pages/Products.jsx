@@ -1,11 +1,10 @@
 import React from 'react'
-import ProductsList from '../Components/ProductsList'
-
+import ServicesCards from '../Components/ServicesCards'
 
 const Products = () => {
   return (
     <div className='m-20'>
-      <ProductsList />
+      <ServicesCards/>
     </div>
   )
 }
