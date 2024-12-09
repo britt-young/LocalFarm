@@ -7,7 +7,7 @@ import {
   
   initTWE({ Ripple });
 
-const ServicesCards = () => {
+const ProductCards = () => {
   return (
     <div className='flex lg:flex-row gap-x-3 sm:gap-y-6 flex-col justify-around'>
         {/* First Card */}
@@ -92,4 +92,4 @@ const ServicesCards = () => {
   )
 }
 
-export default ServicesCards
+export default ProductCards

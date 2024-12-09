@@ -11,7 +11,7 @@ import fruit from "../assets/imgs/fruit.png";
 import eggs from "../assets/imgs/eggs.png";
 import feed from "../assets/imgs/feed.png";
 
-const ServiceSlider = () => {
+const ProductSlider = () => {
   const navigate = useNavigate();
 
   /*  const handleClick = () => {
@@ -98,4 +98,4 @@ const ServiceSlider = () => {
   );
 };
 
-export default ServiceSlider;
+export default ProductSlider;
