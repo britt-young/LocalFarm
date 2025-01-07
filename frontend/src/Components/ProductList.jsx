@@ -1,15 +1,15 @@
-import LazyLoad from 'react-lazyload'; // Import LazyLoad
+import LazyLoad from 'react-lazyload';
 import React, { useState, useEffect } from 'react';
 import Product from './Product';
 
-import dairy from '../assets/imgs/dairy.png';
-import eggs from '../assets/imgs/eggs.png';
-import feed from '../assets/imgs/feed.png';
-import fruit from '../assets/imgs/fruit.png';
-import grain from '../assets/imgs/grain.png';
-import meat from '../assets/imgs/meat.png';
-import spices from '../assets/imgs/spices.png';
-import veggies from '../assets/imgs/veggies.png';
+import dairy from '../assets/imgs/products/dairy.png';
+import eggs from '../assets/imgs/products/eggs.png';
+import feed from '../assets/imgs/products/feed.png';
+import fruit from '../assets/imgs/products/fruit.png';
+import grain from '../assets/imgs/products/grain.png';
+import meat from '../assets/imgs/products/meat.png';
+import spices from '../assets/imgs/products/spices.png';
+import veggies from '../assets/imgs/products/veggies.png';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -52,7 +52,7 @@ const ProductList = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-4xl font-bold text-center text-green-700 mb-8">Product Library</h1>
+      <h1 className="flex justify-center m-5 text-5xl">Product Library</h1>
 
       {/* Search Input */}
       <div className="mb-8 flex justify-center">

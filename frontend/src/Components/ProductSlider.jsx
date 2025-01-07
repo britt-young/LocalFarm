@@ -2,14 +2,14 @@ import { React, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
-import veggies from "../assets/imgs/veggies.png";
-import meat from "../assets/imgs/meat.png";
-import dairy from "../assets/imgs/dairy.png";
-import grain from "../assets/imgs/grain.png";
-import spices from "../assets/imgs/spices.png";
-import fruit from "../assets/imgs/fruit.png";
-import eggs from "../assets/imgs/eggs.png";
-import feed from "../assets/imgs/feed.png";
+import veggies from "../assets/imgs/products/veggies.png";
+import meat from "../assets/imgs/products/meat.png";
+import dairy from "../assets/imgs/products/dairy.png";
+import grain from "../assets/imgs/products/grain.png";
+import spices from "../assets/imgs/products/spices.png";
+import fruit from "../assets/imgs/products/fruit.png";
+import eggs from "../assets/imgs/products/eggs.png";
+import feed from "../assets/imgs/products/feed.png";
 
 const ProductSlider = () => {
   const navigate = useNavigate();

@@ -1,11 +1,13 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 import AOS from "aos";
-import john from "../assets/imgs/farmerjohn.jpg";
-import jane from "../assets/imgs/farmerjane.jpg";
-import sara from "../assets/imgs/farmersara.jpg";
-import ray from "../assets/imgs/farmerray.png";
-import leonard from "../assets/imgs/farmerleonard.jpg";
-import rico from "../assets/imgs/farmerrico.jpg";
+
+import john from "../assets/imgs/people/farmerjohn.jpg";
+import jane from "../assets/imgs/people/farmerjane.jpg";
+import sara from "../assets/imgs/people/farmersara.jpg";
+import ray from "../assets/imgs/people/farmerray.png";
+import leonard from "../assets/imgs/people/farmerleonard.jpg";
+import rico from "../assets/imgs/people/farmerrico.jpg";
 
 AOS.init();
 
