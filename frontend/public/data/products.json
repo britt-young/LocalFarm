@@ -1,14 +1,34 @@
 [
     {
-      "name": "Carrot",
+      "name": "Dairy",
       "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
     },
     {
-      "name": "Spinach",
+      "name": "Eggs",
       "description": "A leafy green vegetable that is high in iron and vitamins A and C."
     },
     {
-      "name": "Broccoli",
+      "name": "Feed",
       "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+    },
+    {
+      "name": "Fruit",
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    },
+    {
+      "name": "Grain",
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+    },
+    {
+      "name": "Meat",
+      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+    },
+    {
+      "name": "Spices",
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    },
+    {
+      "name": "Veggies",
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
     }
   ]
