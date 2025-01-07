@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <div className='h-auto max-w-full'>
       <header>
-        <div className="relative h-[600px] overflow-hidden bg-[url(https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat"></div>
+        <div className="relative h-[600px] overflow-hidden bg-[url(https://images.pexels.com/photos/3804878/pexels-photo-3804878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover bg-center bg-no-repeat"></div>
       </header>
       {/* Product Title */}
         <ProductList />

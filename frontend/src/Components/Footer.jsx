@@ -146,7 +146,7 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-black/5 p-6 text-center">
+      <div className="bg-zinc-50 p-6 text-center">
         <span>© 2024 Copyright: </span>
         <a className="font-semibold" href="https://gulfcoastwdd.com/">
           Gulf Coast Web Design & Development
