@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Carrot",
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    },
+    {
+      "name": "Spinach",
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+    },
+    {
+      "name": "Broccoli",
+      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+    }
+  ]
