@@ -19,7 +19,7 @@ const Stepper = () => {
       ];
 
   return (
-    <div className="w-full flex items-center justify-center m-10">
+    <div className="w-full flex items-center justify-center mb-20">
       <div className="w-full max-w-screen-xl px-6 py-8 bg-white shadow-lg rounded-lg flex">
         {/* Stepper Sider */}
         <div className="w-1/4 flex flex-col items-start space-y-8">

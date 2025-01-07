@@ -24,6 +24,7 @@ const MissionStatement = () => {
           </p>
         </div>
       </div>
+      <h3 className='mt-20 flex justify-center text-3xl'>Fundamental Farm-to-Table Benefits</h3>
       {/* Farm-to-Table */}
       <Stepper />
     </div>
