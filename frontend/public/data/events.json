@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Fall Fest",
+    "date": "2025-08-01T18:00:00",
+    "location": "North Florida Fair Grounds",
+    "description": "Every Saturday from August to November, the North Florida Fair Grounds hosts a Fall Fest. The event features a farmers market, live music, and a petting zoo. The event is free to the public .",
+    "image": "src/assets/imgs/fallfest.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Family Fun Day",
+    "date": "2025-02-05T10:00:00",
+    "location": "Local Grocery Farm",
+    "description": "Hosted by Local Farm, explore the farm and enjoy a free amature rodeo show. The event is free to the public.",
+    "image": "src/assets/imgs/rodeo.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Tallahassee Farmers Market",
+    "date": "2025-01-20T18:00:00",
+    "location": "Downtown Main Street",
+    "description": "Come join us and other local vendors downtown Tallahassee! Our selection of produce is limited to what is in season.",
+    "image": "src/assets/imgs/market.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Summer Squash Festival",
+    "date": "2025-02-05T10:00:00",
+    "location": "North Florida Fair Grounds",
+    "description": "Annual Summer Festival, live music, food, and games.",
+    "image": "src/assets/imgs/fair.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Junior Farmers of America",
+    "date": "2025-01-20T18:00:00",
+    "location": "Local Grocery Farm",
+    "description": "For children ages 5-12, learn about farming and agriculture in small group settings. Sign-up before November 1st.",
+    "image": "src/assets/imgs/junior.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Valentines Day Cooking Class",
+    "date": "2025-02-05T10:00:00",
+    "location": "Local Grocery Farm",
+    "description": "Limited class size, learn how to cook a romantic dinner for two using fresh ingredients from the farm. $50 per person.",
+    "image": "src/assets/imgs/cooking.jpg"
+  }
+]

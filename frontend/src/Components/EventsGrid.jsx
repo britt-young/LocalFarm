@@ -1,13 +1,32 @@
-import React, { useState } from "react";
-import eventsData from "../data/events.json"; //THIS NEEDED TO BE IN PUBLIC OR ELSEWHERE
+import React, { useState, useEffect } from "react";
 
 const EventsGrid = () => {
-  const [events, setEvents] = useState(eventsData); // Initially load all events
-  const [filteredEvents, setFilteredEvents] = useState(eventsData); // Events to display
+  const [events, setEvents] = useState([]); // Initially empty array
+  const [filteredEvents, setFilteredEvents] = useState([]); // Events to display
   const [selectedLocation, setSelectedLocation] = useState(""); // Selected location for filtering
 
   // Extract unique locations for the filter dropdown
-  const locations = [...new Set(eventsData.map((event) => event.location))];
+  const [locations, setLocations] = useState([]);
+
+  // Fetch event data on component mount
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch("data/events.json"); // Path to your JSON file in public folder
+        const data = await response.json();
+        setEvents(data);
+        setFilteredEvents(data);
+        
+        // Extract unique locations for the filter dropdown
+        const uniqueLocations = [...new Set(data.map((event) => event.location))];
+        setLocations(uniqueLocations);
+      } catch (error) {
+        console.error("Error fetching event data:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []); // Empty array ensures this runs only once, on component mount
 
   // Handle location filter change
   const handleLocationChange = (event) => {
@@ -25,15 +44,14 @@ const EventsGrid = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mb-10 mt-10">
       <h1 className="text-4xl font-bold m-6 text-center">
         Upcoming Local Events
       </h1>
 
       {/* Location Filter Dropdown */}
       <div className="mb-6 flex justify-start items-center">
-        {/* Add a label for the location dropdown if needed */}
-        <label htmlFor="location" className="mr-2 text-lg"></label>
+        <label htmlFor="location" className="mr-2 text-lg">Filter by Location</label>
         <select
           id="location"
           value={selectedLocation}
@@ -65,12 +83,12 @@ const EventsGrid = () => {
 
               {/* Event Image */}
               <img
-                src={event.image}
+                src={event.image || "/default-image.jpg"} // Fallback image
                 alt={event.title}
                 className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
 
-              <p className="text-md ">
+              <p className="text-md">
                 <strong>Date:</strong> {new Date(event.date).toLocaleString()}
               </p>
               <p className="text-md mb-4">
@@ -86,3 +104,4 @@ const EventsGrid = () => {
 };
 
 export default EventsGrid;
+
