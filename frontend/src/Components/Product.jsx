@@ -17,7 +17,6 @@ const Product = React.memo(({ name, description, image, seasonImage }) => {
       </div>
 
       {/* Season Image Section at the bottom-right */}
-      <p></p>
       {seasonImage && (
         <img
           src={seasonImage}

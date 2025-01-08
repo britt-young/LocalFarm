@@ -5,7 +5,7 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Form submission logic
+    // Form submission logic****add email sending logic here
     console.log("Form submitted");
   };
 

@@ -1,13 +1,11 @@
 import React from "react";
-import EventFilter from "../Components/EventFilter";
+import EventsGrid from "../Components/EventsGrid";
 
 const Events = () => {
   return (
-    <div>
       <div>
-        <EventFilter />
+        <EventsGrid />
       </div>
-    </div>
   );
 };
 

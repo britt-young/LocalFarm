@@ -1,289 +1,85 @@
-import React from "react";
-import fair from "../assets/imgs/fair.jpg";
-import fest from "../assets/imgs/fallfest.jpg";
-import market from "../assets/imgs/market.jpg";
-import rodeo from "../assets/imgs/rodeo.jpg";
-import AOS from "aos";
-
-AOS.init();
+import React, { useState } from "react";
+import eventsData from "../../public/data/events.json";
 
 const EventsGrid = () => {
+  const [events, setEvents] = useState(eventsData); // Initially load all events
+  const [filteredEvents, setFilteredEvents] = useState(eventsData); // Events to display
+  const [selectedLocation, setSelectedLocation] = useState(""); // Selected location for filtering
+
+  // Extract unique locations for the filter dropdown
+  const locations = [...new Set(eventsData.map((event) => event.location))];
+
+  // Handle location filter change
+  const handleLocationChange = (event) => {
+    const location = event.target.value;
+    setSelectedLocation(location);
+
+    // Filter events based on selected location
+    if (location) {
+      const filtered = events.filter((event) => event.location === location);
+      setFilteredEvents(filtered);
+    } else {
+      // Reset to show all events if no location is selected
+      setFilteredEvents(events);
+    }
+  };
+
   return (
-    <div className="flex flex-col items-center m-auto py-20">
-      {/* Title */}
-      {/* <h1 className="font-bold text-4xl mb-10">
-        Events Featuring Local Farm Pop-Up
-      </h1> */}
-      {/* Event Cards */}
-      <div className="grid lg:grid-cols-2 grid-cols-1 gap-20">
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold m-6 text-center">
+        Upcoming Local Events
+      </h1>
+
+      {/* Location Filter Dropdown */}
+      <div className="mb-6 flex justify-start items-center">
+        {/* Add a label for the location dropdown if needed */}
+        <label htmlFor="location" className="mr-2 text-lg"></label>
+        <select
+          id="location"
+          value={selectedLocation}
+          onChange={handleLocationChange}
+          className="border border-gray-300 p-2 rounded-lg"
         >
-          <a
-            href="https://eldercarebigbend.org/oktoberfest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
+          <option value="">Select a location</option>
+          {locations.map((location) => (
+            <option key={location} value={location}>
+              {location}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* Display Events */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {filteredEvents.length === 0 ? (
+          <p className="text-center text-xl">
+            No events found for the selected location.
+          </p>
+        ) : (
+          filteredEvents.map((event) => (
+            <div
+              key={event.id}
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <h2 className="text-2xl font-semibold mb-4">{event.title}</h2>
+
+              {/* Event Image */}
               <img
-                className="object-cover w-full h-full"
-                src={fest}
-                alt="fest"
+                src={event.image}
+                alt={event.title}
+                className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
+
+              <p className="text-md ">
+                <strong>Date:</strong> {new Date(event.date).toLocaleString()}
+              </p>
+              <p className="text-md mb-4">
+                <strong>Location:</strong> {event.location}
+              </p>
+              <p className="text-base text-gray-700">{event.description}</p>
             </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-orange-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">15</div>
-                <div className="font-bold tracking-wider">AUG</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Autumn Festival</div>
-              <div className="text-md">
-                Hosted by the Jameson Chamber of Commerce
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://northfloridafair.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={fair}
-                alt="fair"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-red-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">10</div>
-                <div className="font-bold tracking-wider">SEP</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Gray County Fair</div>
-              <div className="text-md">
-                Sunrise to sunset at the Gray County Fairgrounds
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://www.tallahasseefarmersmarket.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={market}
-                alt="market"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-teal-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">1</div>
-                <div className="font-bold tracking-wider">OCT</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">
-                Local Town Farmer's Market
-              </div>
-              <div className="text-md">
-                Every Saturday in October from 8am to 1pm at the Town Square
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://www.doublekrodeoproductions.com/events/9th-annual-tallahassee-extreme-rodeo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={rodeo}
-                alt="rodeo"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-blue-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">21</div>
-                <div className="font-bold tracking-wider">APR</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Jameson Annual Rodeo</div>
-              <div className="text-md">
-                3rd Annual Jameson Rodeo at the Gray County Fairgrounds
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://eldercarebigbend.org/oktoberfest"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={fest}
-                alt="fest"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-orange-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">15</div>
-                <div className="font-bold tracking-wider">AUG</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Autumn Festival</div>
-              <div className="text-md">
-                Hosted by the Jameson Chamber of Commerce
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://northfloridafair.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={fair}
-                alt="fair"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-red-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">10</div>
-                <div className="font-bold tracking-wider">SEP</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Gray County Fair</div>
-              <div className="text-md">
-                Sunrise to sunset at the Gray County Fairgrounds
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://www.tallahasseefarmersmarket.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={market}
-                alt="market"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-teal-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">1</div>
-                <div className="font-bold tracking-wider">OCT</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">
-                Local Town Farmer's Market
-              </div>
-              <div className="text-md">
-                Every Saturday in October from 8am to 1pm at the Town Square
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Event Card */}
-        <div
-          data-aos="fade-up"
-          className="max-w-md rounded overflow-hidden shadow-lg"
-        >
-          <a
-            href="https://www.doublekrodeoproductions.com/events/9th-annual-tallahassee-extreme-rodeo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="relative w-full h-96">
-              <img
-                className="object-cover w-full h-full"
-                src={rodeo}
-                alt="rodeo"
-              />
-            </div>
-          </a>
-          <div className="bg-white shadow-lg shadow-gray-200 flex grid-rows-1 items-center">
-            <div className="bg-blue-700 text-white p-6 text-2xl">
-              <div className="flex flex-col items-center">
-                <div className="day">21</div>
-                <div className="font-bold tracking-wider">APR</div>
-              </div>
-            </div>
-            <div className="px-10">
-              <div className="font-bold text-lg pb-1">Jameson Annual Rodeo</div>
-              <div className="text-md">
-                3rd Annual Jameson Rodeo at the Gray County Fairgrounds
-              </div>
-            </div>
-          </div>
-        </div>
+          ))
+        )}
       </div>
     </div>
   );
