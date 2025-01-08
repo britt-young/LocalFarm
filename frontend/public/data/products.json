@@ -1,107 +1,107 @@
 [
   {
     "name": "Apples",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "description": "Worldwide, there are more than 7,500 known varieties, 100 of which are grown commercially in the US. They all differ in shape, size, color, texture, aroma and flavor.",
     "season": "Summer"
   },
   {
     "name": "Apricots",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "description": "Apricots only ripen on the tree. Once picked, they become softer but not more flavorful. Look for fruit that is bright with no green tinge.",
     "season": "Spring"
   },
   {
     "name": "Avocados",
-    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "description": "Its skin may be smooth or bumpy, bright green or black, and they can be pear-shaped, egg-shaped or spherical. An avocado is ripe when it yields to gentle pressure when squeezed.",
     "season": "Annual"
   },
   {
     "name": "Blackberries",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "description": "Many brambles growers are not certified organic but do not spray their crops. Get as local as you can and ask the grower about their growing methods.",
     "season": "Spring"
   },
   {
     "name": "Blueberries",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "description": "Look for firm, dry, plump blueberries with smooth skin and no shriveled or moldy bits. Pass on greenish or red ones — they're underripe.",
     "season": "Summer"
   },
   {
     "name": "Cabbage",
-    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "description": "Red and green cabbage should have a firm, tight head and feel heavy for their size, with no black or soft spots. Savoy and Napa cabbage are generally a bit looser.",
     "season": "Annual"
   },
   {
     "name": "Carrots",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "description": "Carrots come in all shades of purple, red, white, yellow and of course, orange. If they have the greens attached, look for feathery, perky leaves with no wilting, black spots or yellowing.",
     "season": "Annual"
   },
   {
     "name": "Corn",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "description": "Look for ears that are firm, plump and unblemished. Instead of stripping down the husks to examine, just gently squeeze cobs down the length of the ear to feel for bald spots.",
     "season": "Fall"
   },
   {
     "name": "Dairy",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "description": "Finest cow milk around",
     "season": "Annual"
   },
   {
     "name": "Eggs",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "description": "Organic, free-range chickens produces only the best eggs",
     "season": "Annual"
   },
-    {
-      "name": "Lettuce",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+  {
+    "name": "Lettuce",
+    "description": "There are many varieties of lettuce, from loose-leaf to those bought as a head. For all varieties, look for leaves that are intact and not wilting.",
     "season": "Annual"
-    },
-    {
-      "name": "Mandarins",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+  },
+  {
+    "name": "Mandarins",
+    "description": "Color is not always a good indicator of a mandarin's ripeness, so don't hesitate to pick up one that is still a little green so long as it smells sweet.",
     "season": "Fall"
-    },
-    {
-      "name": "Meat",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+  },
+  {
+    "name": "Meat",
+    "description": "100%, Grass-fed, USDA Beef",
     "season": "Annual"
-    },
-    {
-      "name": "Nectarines",
-      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+  },
+  {
+    "name": "Nectarines",
+    "description": "A variety of peach with fuzzless skin, be sure to choose a fruit that has a strong perfume and is free of blemishes and bruises.",
     "season": "Spring"
-    },
-    {
-      "name": "Oranges",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+  },
+  {
+    "name": "Oranges",
+    "description": "Oranges that are still green and too hard are not yet ripe. Instead, choose an orange that has medium firmness and feels juicy when lightly squeezed.",
     "season": "Spring"
-    },
-    {
-      "name": "Pecans",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+  },
+  {
+    "name": "Pecans",
+    "description": "Pecans are oval-shaped nuts that have a rich, buttery flavor. They can range in color from tan to brown and can be purchased either in the shell or already shelled.",
     "season": "Winter"
-    },
-    {
-      "name": "Pumpkins",
-      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+  },
+  {
+    "name": "Pumpkins",
+    "description": "While pumpkins come in a variety of types, sizes and colors - you should always choose a pumpkin that feels heavy for its weight and pass on those with any black or mushy spots.",
     "season": "Fall"
-    },
-    {
-      "name": "Raspberries",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+  },
+  {
+    "name": "Raspberries",
+    "description": "Good raspberries should be evenly colored and intact; squished berries will quickly go bad.",
     "season": "Summer"
-    },
-    {
-      "name": "Spinach",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+  },
+  {
+    "name": "Spinach",
+    "description": "Fresh spinach leaves can be sold as loose leaves or still attached to the stem. Look for perky, evenly colored leaves with no mushy spots. Smaller leaves will be the most tender while larger leaves can be stringy in texture.",
     "season": "Annual"
-    },
-    {
-      "name": "Strawberries",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+  },
+  {
+    "name": "Strawberries",
+    "description": "Bigger isn't always better when it comes to strawberries: look for berries that are glossy, fragrant and deeply colored all the way up to the stem.",
     "season": "Annual"
-    },
-    {
-      "name": "Tomatoes",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+  },
+  {
+    "name": "Tomatoes",
+    "description": "Tomatoes come in a dizzying array of colors and shapes, so rather than relying on color alone, look for tomatoes that are heavy and fragrant. Some scarring is normal on heirloom varieties, but avoid tomatoes with freshly torn skin.",
     "season": "Summer"
-    }
-  ]
+  }
+]
