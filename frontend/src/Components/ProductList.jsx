@@ -24,10 +24,15 @@ import spinach from '../assets/imgs/products/Spinach.jpg';
 import strawberries from '../assets/imgs/products/Strawberries.jpg';
 import tomatoes from '../assets/imgs/products/Tomatoes.jpg';
 
+import annual from '../assets/imgs/seasons/annual.png';
+import winter from '../assets/imgs/seasons/winter.png';
+import spring from '../assets/imgs/seasons/spring.png';
+import summer from '../assets/imgs/seasons/summer.png';
+import fall from '../assets/imgs/seasons/fall.png';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const [searchQuery, setSearchQuery] = useState(''); // Add state for search query
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('/data/products.json')
@@ -36,9 +41,26 @@ const ProductList = () => {
       .catch((error) => console.error('Error fetching products data:', error));
   }, []);
 
-  // Map over products and add the corresponding image
+  // Function to get season image based on product season
+  const getSeasonImage = (season) => {
+    switch (season) {
+      case 'Winter':
+        return winter;
+      case 'Spring':
+        return spring;
+      case 'Summer':
+        return summer;
+      case 'Fall':
+        return fall;
+      default:
+        return annual; // For products that are available year-round
+    }
+  };
+
+  // Map over products and add the corresponding image and season
   const productsWithImages = products.map((product) => {
     let image;
+
     if (product.name === 'Dairy') {
       image = dairy;
     } else if (product.name === 'Apples') {
@@ -57,13 +79,11 @@ const ProductList = () => {
       image = carrots;
     } else if (product.name === 'Corn') {
       image = corn;
-    }else if (product.name === 'Dairy') {
-      image = dairy;
     } else if (product.name === 'Eggs') {
       image = eggs;
     } else if (product.name === 'Lettuce') {
       image = lettuce;
-    }else if (product.name === 'Mandarins') {
+    } else if (product.name === 'Mandarins') {
       image = mandarins;
     } else if (product.name === 'Meat') {
       image = meat;
@@ -73,7 +93,7 @@ const ProductList = () => {
       image = oranges;
     } else if (product.name === 'Pecans') {
       image = pecans;
-    }else if (product.name === 'Pumpkins') {
+    } else if (product.name === 'Pumpkins') {
       image = pumpkins;
     } else if (product.name === 'Raspberries') {
       image = raspberries;
@@ -81,10 +101,14 @@ const ProductList = () => {
       image = spinach;
     } else if (product.name === 'Strawberries') {
       image = strawberries;
-    }else if (product.name === 'Tomatoes') {
+    } else if (product.name === 'Tomatoes') {
       image = tomatoes;
     }
-    return { ...product, image };
+
+    // Add the season image based on the product's season
+    const seasonImage = getSeasonImage(product.season);
+
+    return { ...product, image, seasonImage };
   });
 
   // Filter products based on search query
@@ -115,6 +139,7 @@ const ProductList = () => {
                 name={product.name}
                 description={product.description}
                 image={product.image}
+                seasonImage={product.seasonImage} 
               />
             </LazyLoad>
           ))

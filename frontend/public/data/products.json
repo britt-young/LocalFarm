@@ -1,86 +1,107 @@
 [
   {
     "name": "Apples",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Summer"
   },
   {
     "name": "Apricots",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Spring"
   },
   {
     "name": "Avocados",
-    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "season": "Annual"
   },
   {
     "name": "Blackberries",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Spring"
   },
   {
     "name": "Blueberries",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Summer"
   },
   {
     "name": "Cabbage",
-    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+    "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "season": "Annual"
   },
   {
     "name": "Carrots",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
   },
   {
     "name": "Corn",
-    "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+    "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Fall"
   },
   {
     "name": "Dairy",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
   },
   {
     "name": "Eggs",
-    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+    "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
   },
     {
       "name": "Lettuce",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
     },
     {
       "name": "Mandarins",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Fall"
     },
     {
       "name": "Meat",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
     },
     {
       "name": "Nectarines",
-      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "season": "Spring"
     },
     {
       "name": "Oranges",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Spring"
     },
     {
       "name": "Pecans",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Winter"
     },
     {
       "name": "Pumpkins",
-      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content."
+      "description": "A cruciferous vegetable that is known for its high vitamin C and fiber content.",
+    "season": "Fall"
     },
     {
       "name": "Raspberries",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Summer"
     },
     {
       "name": "Spinach",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Annual"
     },
     {
       "name": "Strawberries",
-      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene."
+      "description": "A root vegetable, usually orange in color, and known for being rich in beta-carotene.",
+    "season": "Annual"
     },
     {
       "name": "Tomatoes",
-      "description": "A leafy green vegetable that is high in iron and vitamins A and C."
+      "description": "A leafy green vegetable that is high in iron and vitamins A and C.",
+    "season": "Summer"
     }
   ]
