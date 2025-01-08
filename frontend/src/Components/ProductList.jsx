@@ -12,7 +12,8 @@ import carrots from '../assets/imgs/products/Carrots.jpg';
 import corn from '../assets/imgs/products/Corn.jpg';
 import dairy from '../assets/imgs/products/dairy.png';
 import eggs from '../assets/imgs/products/eggs.png';
-import mandarines from '../assets/imgs/products/Mandarines.jpg';
+import lettuce from '../assets/imgs/products/Lettuce.jpg';
+import mandarins from '../assets/imgs/products/Mandarins.jpg';
 import meat from '../assets/imgs/products/meat.png';
 import nectarines from '../assets/imgs/products/Nectarines.jpg';
 import oranges from '../assets/imgs/products/Oranges.jpg';
@@ -20,6 +21,7 @@ import pecans from '../assets/imgs/products/Pecans.jpg';
 import pumpkins from '../assets/imgs/products/Pumpkins.jpg';
 import raspberries from '../assets/imgs/products/Raspberries.jpg';
 import spinach from '../assets/imgs/products/Spinach.jpg';
+import strawberries from '../assets/imgs/products/Strawberries.jpg';
 import tomatoes from '../assets/imgs/products/Tomatoes.jpg';
 
 
@@ -59,8 +61,10 @@ const ProductList = () => {
       image = dairy;
     } else if (product.name === 'Eggs') {
       image = eggs;
-    } else if (product.name === 'Mandarines') {
-      image = mandarines;
+    } else if (product.name === 'Lettuce') {
+      image = lettuce;
+    }else if (product.name === 'Mandarins') {
+      image = mandarins;
     } else if (product.name === 'Meat') {
       image = meat;
     } else if (product.name === 'Nectarines') {
@@ -71,11 +75,13 @@ const ProductList = () => {
       image = pecans;
     }else if (product.name === 'Pumpkins') {
       image = pumpkins;
-    } else if (product.name === 'Raspbereies') {
+    } else if (product.name === 'Raspberries') {
       image = raspberries;
     } else if (product.name === 'Spinach') {
       image = spinach;
-    } else if (product.name === 'Tomatoes') {
+    } else if (product.name === 'Strawberries') {
+      image = strawberries;
+    }else if (product.name === 'Tomatoes') {
       image = tomatoes;
     }
     return { ...product, image };
