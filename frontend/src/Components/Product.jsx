@@ -12,7 +12,7 @@ const Product = React.memo(({ name, description, image }) => {
       />
 
       {/* Product Details Section */}
-      <h2 className="text-2xl font-semibold text-green-600">{name}</h2>
+      <h2 className="text-2xl font-semibold text-green-900">{name}</h2>
       <p className="text-gray-700 mt-2">{description}</p>
     </div>
   );

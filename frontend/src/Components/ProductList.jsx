@@ -2,14 +2,26 @@ import LazyLoad from 'react-lazyload';
 import React, { useState, useEffect } from 'react';
 import Product from './Product';
 
+import apples from '../assets/imgs/products/Apples.jpg';
+import apricots from '../assets/imgs/products/Apricots.jpg';
+import avocados from '../assets/imgs/products/Avocados.jpg';
+import blackberries from '../assets/imgs/products/Blackberries.jpg';
+import blueberries from '../assets/imgs/products/Blueberries.jpg';
+import cabbage from '../assets/imgs/products/Cabbage.jpg';
+import carrots from '../assets/imgs/products/Carrots.jpg';
+import corn from '../assets/imgs/products/Corn.jpg';
 import dairy from '../assets/imgs/products/dairy.png';
 import eggs from '../assets/imgs/products/eggs.png';
-import feed from '../assets/imgs/products/feed.png';
-import fruit from '../assets/imgs/products/fruit.png';
-import grain from '../assets/imgs/products/grain.png';
+import mandarines from '../assets/imgs/products/Mandarines.jpg';
 import meat from '../assets/imgs/products/meat.png';
-import spices from '../assets/imgs/products/spices.png';
-import veggies from '../assets/imgs/products/veggies.png';
+import nectarines from '../assets/imgs/products/Nectarines.jpg';
+import oranges from '../assets/imgs/products/Oranges.jpg';
+import pecans from '../assets/imgs/products/Pecans.jpg';
+import pumpkins from '../assets/imgs/products/Pumpkins.jpg';
+import raspberries from '../assets/imgs/products/Raspberries.jpg';
+import spinach from '../assets/imgs/products/Spinach.jpg';
+import tomatoes from '../assets/imgs/products/Tomatoes.jpg';
+
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -27,20 +39,44 @@ const ProductList = () => {
     let image;
     if (product.name === 'Dairy') {
       image = dairy;
+    } else if (product.name === 'Apples') {
+      image = apples;
+    } else if (product.name === 'Apricots') {
+      image = apricots;
+    } else if (product.name === 'Avocados') {
+      image = avocados;
+    } else if (product.name === 'Blackberries') {
+      image = blackberries;
+    } else if (product.name === 'Blueberries') {
+      image = blueberries;
+    } else if (product.name === 'Cabbage') {
+      image = cabbage;
+    } else if (product.name === 'Carrots') {
+      image = carrots;
+    } else if (product.name === 'Corn') {
+      image = corn;
+    }else if (product.name === 'Dairy') {
+      image = dairy;
     } else if (product.name === 'Eggs') {
       image = eggs;
-    } else if (product.name === 'Feed') {
-      image = feed;
-    } else if (product.name === 'Fruit') {
-      image = fruit;
-    } else if (product.name === 'Grain') {
-      image = grain;
+    } else if (product.name === 'Mandarines') {
+      image = mandarines;
     } else if (product.name === 'Meat') {
       image = meat;
-    } else if (product.name === 'Spices') {
-      image = spices;
-    } else if (product.name === 'Veggies') {
-      image = veggies;
+    } else if (product.name === 'Nectarines') {
+      image = nectarines;
+    } else if (product.name === 'Oranges') {
+      image = oranges;
+    } else if (product.name === 'Pecans') {
+      image = pecans;
+    }else if (product.name === 'Pumpkins') {
+      image = pumpkins;
+    } else if (product.name === 'Raspbereies') {
+      image = raspberries;
+    } else if (product.name === 'Spinach') {
+      image = spinach;
+    } else if (product.name === 'Tomatoes') {
+      image = tomatoes;
     }
     return { ...product, image };
   });
