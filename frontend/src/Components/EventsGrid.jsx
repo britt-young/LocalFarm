@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import eventsData from "../../public/data/events.json";
+import eventsData from "../data/events.json"; //THIS NEEDED TO BE IN PUBLIC OR ELSEWHERE
 
 const EventsGrid = () => {
   const [events, setEvents] = useState(eventsData); // Initially load all events
