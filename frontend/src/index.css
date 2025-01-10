@@ -23,6 +23,6 @@
         @apply text-sm font-normal leading-tight text-black sm:text-base lg:text-lg dark:text-white;
     }
     p {
-        @apply text-base font-normal text-gray-700 dark:text-white;
+        @apply text-base font-normal text-gray-700 dark:text-gray-200;
     }
 }
