@@ -1,6 +1,5 @@
 import React from "react";
 import LazyLoad from 'react-lazyload';
-import AOS from "aos";
 
 import john from "../assets/imgs/people/farmerjohn.jpg";
 import jane from "../assets/imgs/people/farmerjane.jpg";
@@ -9,17 +8,13 @@ import ray from "../assets/imgs/people/farmerray.png";
 import leonard from "../assets/imgs/people/farmerleonard.jpg";
 import rico from "../assets/imgs/people/farmerrico.jpg";
 
-AOS.init();
-
 const Team = () => {
   return (
     <div>
       {/* Team About*/}
       <div className="divide-y-2 divide-solid divide-lime-900 ">
-        <h2 className="flex justify-center m-5 text-5xl"> Meet The Team</h2>
-        <div
-        data-aos="fade-up"
-          className="grid lg:grid-cols-3 grid-cols-1 justify-items-center mx-20"
+        <h2 className="flex justify-center m-5 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"> Meet The Team</h2>
+        <div className="grid lg:grid-cols-3 grid-cols-1 justify-items-center mx-20"
         >
           {/* First Card */}
           <div className="flex flex-col rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white md:max-w-2xl md:flex-row m-10">
