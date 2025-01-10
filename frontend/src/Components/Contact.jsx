@@ -27,7 +27,7 @@ const Contact = () => {
       <div className="container mx-auto px-6 md:px-12">
         <div className="block rounded-lg bg-[hsla(0,0%,100%,0.4)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Contact Card */}
+            {/* Location Card */}
             <div className="w-full mb-12 md:mb-0">
               <h2 className="font-semibold mb-10 flex justify-center text-xl">
                 Visit us!
@@ -46,7 +46,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              {/* Contact Card */}
+              {/* Location Card */}
               <div className="w-full mb-12 md:mb-0">
                 <div className="block max-w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
                   <div className="p-6 mb-2">
@@ -62,7 +62,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              {/* Contact Card */}
+              {/* Location Card */}
               <div className="w-full mb-12 md:mb-0">
                 <div className="block max-w-full rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
                   <div className="p-6">
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {/* Subscribe Contact Form */}
+            {/* Newsletter Contact Form */}
             <div className="w-full">
               <h2 className="font-semibold mb-10 flex justify-center text-xl">
                 Subscribe to our Events Newsletter
