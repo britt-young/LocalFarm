@@ -10,7 +10,7 @@ const Testimonials = () => {
         <h5 className="flex justify-center items-center text-2xl font-bold uppercase">
           John Lesterman
         </h5>
-        <h6 className="flex justify-center items-center mb-4 font-normal text-white dark:white uppercase">
+        <h6 className="flex justify-center items-center mb-4 text-white dark:white">
           Chef at Parrish Farm to Table Restaurant
         </h6>
         <p className="flex justify-center items-center text-center  mb-4 text-black dark:text-white">
