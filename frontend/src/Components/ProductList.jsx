@@ -118,7 +118,7 @@ const ProductList = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="flex justify-center m-5 text-5xl">Product Library</h1>
+      <h1 className="flex justify-center m-5 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Product Library</h1>
 
       {/* Search Input */}
       <div className="mb-8 flex justify-center">

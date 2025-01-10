@@ -45,7 +45,7 @@ const EventsGrid = () => {
 
   return (
     <div className="container mx-auto p-4 mb-10 mt-10">
-      <h1 className="text-4xl font-bold m-6 text-center">
+      <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl m-6 text-center">
         Upcoming Local Events
       </h1>
 
@@ -58,7 +58,7 @@ const EventsGrid = () => {
           onChange={handleLocationChange}
           className="border border-gray-300 p-2 rounded-lg"
         >
-          <option value="">Select a location</option>
+          <option value="">All locations</option>
           {locations.map((location) => (
             <option key={location} value={location}>
               {location}
