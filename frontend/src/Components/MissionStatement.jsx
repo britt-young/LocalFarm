@@ -17,7 +17,7 @@ const MissionStatement = () => {
               farm-to-table products that nourish both body and community. We
               are dedicated to growing high-quality, locally sourced food while
               fostering a deep connection between our farm and the people we
-              serve.
+              serve
             </p>
           </div>
           <Stats />
