@@ -13,7 +13,7 @@ const Testimonials = () => {
         <h6 className="flex justify-center items-center mb-4 text-white dark:white">
           Chef at Parrish Farm to Table Restaurant
         </h6>
-        <p className="flex justify-center items-center text-center  mb-4 text-black dark:text-white">
+        <p className="flex justify-center items-center text-center mb-4 text-black dark:text-white">
           <span className="inline-block pe-4 [&>svg]:w-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -28,7 +28,7 @@ const Team = () => {
               <h4 className="mb-2 text-base font-semibold">
                 Owner of Local Farm
               </h4>
-              <p className="mb-4 text-base">
+              <p className="mb-4 ">
                 Growing up on his family’s organic farm in Willow Creek, Jack
                 learned the values of hard work and land stewardship, which he
                 carries into his own farming practice today. Committed to giving
