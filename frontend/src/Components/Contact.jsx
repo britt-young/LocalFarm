@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const form = useRef();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Form submission logic****add email sending logic here
-    console.log("Form submitted");
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_53ecpnp', 'template_lkmqk12', form.current, {
+        publicKey: 'G_2EUKwm4DuLTm0pd',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -70,7 +82,8 @@ const Contact = () => {
                       Pop-Up Stand
                     </h5>
                     <h6 className="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300">
-                      Location Varies, be sure to check our current location by clicking below
+                      Location Varies, be sure to check our current location by
+                      clicking below
                     </h6>
                     <a
                       type="button"
@@ -83,73 +96,36 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {/* Newsletter Contact Form */}
+            {/* Contact Form */}
             <div className="w-full">
-              <h2 className="font-semibold mb-10 flex justify-center text-xl">
-                Subscribe to our Events Newsletter
-              </h2>
-              <form onSubmit={handleSubmit}>
-                <div className="relative mb-6">
+              <h2 className="font-semibold mb-10 text-center text-xl text-gray-800">Subscribe to our Events Newsletter</h2>
+              <form ref={form} onSubmit={sendEmail} className="space-y-4">
+                <div className="flex flex-col">
+                  <label htmlFor="user_name" className="text-sm font-medium text-gray-700">Your Name</label>
                   <input
                     type="text"
-                    className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
-                    id="exampleInput90"
+                    name="user_name"
+                    id="user_name"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent"
                   />
-                  <label
-                    className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary"
-                    htmlFor="exampleInput90"
-                  >
-                    Name
-                  </label>
                 </div>
-                <div className="relative mb-6">
+                <div className="flex flex-col">
+                  <label htmlFor="user_email" className="text-sm font-medium text-gray-700">Your Email</label>
                   <input
                     type="email"
-                    className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary"
-                    id="exampleInput91"
+                    name="user_email"
+                    id="user_email"
+                    required
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent"
                   />
-                  <label
-                    className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary"
-                    htmlFor="exampleInput91"
-                  >
-                    Email address
-                  </label>
                 </div>
-                <div className="relative mb-6">
-                  <textarea
-                    className="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                  <label
-                    htmlFor="exampleFormControlTextarea1"
-                    className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary"
-                  >
-                    Message
-                  </label>
-                </div>
-                <div className="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
+                <div className="flex justify-center">
                   <input
-                    className="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none"
-                    type="checkbox"
-                    checked={isChecked}
-                    onChange={() => setIsChecked(!isChecked)}
-                    id="exampleCheck96"
-                  />
-                  <label
-                    className="inline-block pl-[0.15rem] text-neutral-500"
-                    htmlFor="exampleCheck96"
-                  >
-                    I agree to the processing of my personal data
-                  </label>
-                </div>
-                <div className="mt-10 text-center lg:text-left flex justify-center">
-                  <button
                     type="submit"
-                    className="inline-block rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-normal uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
-                  >
-                    Send Message
-                  </button>
+                    value="Send"
+                    className="w-full px-6 py-2 mt-4 bg-lime-900 text-white font-semibold rounded-md shadow-md hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                  />
                 </div>
               </form>
             </div>
