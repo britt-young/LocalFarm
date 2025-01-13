@@ -90,7 +90,7 @@ const Contact = () => {
                     </h6>
                     <a
                       type="button"
-                      href="#"
+                      href="events"
                       className="uppercase pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400"
                     >
                       Current pop-up locations
@@ -139,7 +139,7 @@ const Contact = () => {
                   <input
                     type="submit"
                     value="Send"
-                    className="w-full px-6 py-2 mt-4 bg-lime-900 text-white font-semibold rounded-md shadow-md hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-lime-500"
+                    className="w-full rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-normal uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_1px_2px_-1px_rgba(0,0,0,0.1)]"
                   />
                 </div>
               </form>
