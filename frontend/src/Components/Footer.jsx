@@ -63,20 +63,20 @@ const Footer = () => {
       </div>
 
       {/* <!-- Footer content container --> */}
-      <div className="mx-6 py-10 text-center md:text-left">
+      <div className="mx-6 py-5 text-center md:text-left">
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* <!-- Bottom section --> */}
           <div className="">
-            <h6 className="text-black mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+            <h6 className="text-black mb-4 flex justify-center font-semibold uppercase md:justify-start">
               Proud partners of the community</h6>
-            <ul className="w-96 text-surface dark:text-white">
-              <li className=" w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+            <ul className=" text-surface dark:text-white">
+              <li className="mb-4">
                 Downtown Market Tallahassee
               </li>
-              <li className="w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+              <li className="mb-4">
                 Parrish Farm to Table Restaurant
               </li>
-              <li className="w-full border-b-2 border-neutral-300 py-2 dark:border-white/10">
+              <li className="mb-4">
                 Tallahassee Farmers Market
               </li>
             </ul>
@@ -146,7 +146,7 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-zinc-50 p-6 text-center">
+      <div className="bg-zinc-50 p-4 text-center">
         <span>© 2024 Copyright: </span>
         <a className="font-semibold" href="https://gulfcoastwdd.com/">
           Gulf Coast Web Design & Development
