@@ -1,21 +1,24 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_53ecpnp', 'template_lkmqk12', form.current, {
-        publicKey: 'G_2EUKwm4DuLTm0pd',
+      .sendForm("service_53ecpnp", "template_lkmqk12", form.current, {
+        publicKey: "G_2EUKwm4DuLTm0pd",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          setMessage('Thank you for signing up!');
+          form.current.reset(); // Reset the form fields after successful submission
         },
         (error) => {
+          setMessage('Oops! Something went wrong. Please try again later.');
           console.log('FAILED...', error.text);
         },
       );
@@ -98,10 +101,17 @@ const Contact = () => {
             </div>
             {/* Contact Form */}
             <div className="w-full">
-              <h2 className="font-semibold mb-10 text-center text-xl text-gray-800">Subscribe to our Events Newsletter</h2>
+              <h2 className="font-semibold mb-10 text-center text-xl text-gray-800">
+                Subscribe to our Events Newsletter
+              </h2>
               <form ref={form} onSubmit={sendEmail} className="space-y-4">
                 <div className="flex flex-col">
-                  <label htmlFor="user_name" className="text-sm font-medium text-gray-700">Your Name</label>
+                  <label
+                    htmlFor="user_name"
+                    className="text-sm font-medium text-gray-700"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
                     name="user_name"
@@ -111,7 +121,12 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label htmlFor="user_email" className="text-sm font-medium text-gray-700">Your Email</label>
+                  <label
+                    htmlFor="user_email"
+                    className="text-sm font-medium text-gray-700"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     name="user_email"
@@ -128,6 +143,13 @@ const Contact = () => {
                   />
                 </div>
               </form>
+
+              {/* Confirmation Message */}
+              {message && (
+                <div className="mt-6 text-center text-lg font-normal text-gray-500">
+                  {message}
+                </div>
+              )}
             </div>
           </div>
         </div>
