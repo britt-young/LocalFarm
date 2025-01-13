@@ -9,7 +9,7 @@ const AboutVideo = () => {
         autoPlay={true}
         loop={true}
         muted={true}
-        style={{ height: "600px", width: "100%" }}
+        style={{ height: "700px", width: "100%" }}
       >
         <source src={video} type="video/mp4" />
       </video>

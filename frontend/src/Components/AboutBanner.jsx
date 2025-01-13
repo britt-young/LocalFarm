@@ -38,7 +38,7 @@ const AboutBanner = () => {
         </p>
         <a
           href="events"
-          className="flex-none rounded-full bg-lime-900 px-3.5 py-1 text-sm font-normal text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          className="flex-none rounded-full bg-lime-900 px-3.5 py-1 text-sm font-normal text-white shadow-sm transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white"
         >
           Find a pop-up location <span aria-hidden="true">&rarr;</span>
         </a>

@@ -16,7 +16,7 @@ const Header = () => {
     <div>
       <header>
         {/* Hero section with background image, heading, subheading and button */}
-        <div className="relative h-[600px] overflow-hidden bg-[url(https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat">
+        <div className="relative h-[700px] overflow-hidden bg-[url(https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat">
           <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/0 bg-fixed">
             <div className="flex h-full items-center justify-center">
               <div className="text-center text-white md:px-12">

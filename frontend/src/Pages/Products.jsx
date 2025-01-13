@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div className="h-auto max-w-full">
       <header>
-        <div className="relative h-[600px] overflow-hidden bg-[url(https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover bg-center bg-no-repeat"></div>
+        <div className="relative h-[700px] overflow-hidden bg-[url(https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover bg-center bg-no-repeat"></div>
       </header>
       <div
         className="flex items-center bg-pink-800 text-white text-sm font-bold px-4 py-3"
