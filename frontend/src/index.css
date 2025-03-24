@@ -1,7 +1,5 @@
-/* Necessary Tailwind CSS */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
 
 @layer base {
     h1 {
