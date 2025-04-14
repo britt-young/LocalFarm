@@ -1,5 +1,5 @@
 import React from "react";
-import LazyLoad from 'react-lazyload';
+// import LazyLoad from 'react-lazyload';
 
 import john from "../assets/imgs/people/farmerjohn.jpg";
 import jane from "../assets/imgs/people/farmerjane.jpg";

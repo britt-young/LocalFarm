@@ -1,3 +1,41 @@
 @import "tailwindcss";
 
+/* @theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+} */
 
+@layer base {
+    /* fluid text needs adjusting */
+    body {
+      @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
+    }
+  
+    h1 {
+      @apply uppercase text-[4em] font-bold text-black dark:text-white;
+    }
+  
+    h2 {
+      @apply uppercase text-[3em] font-bold text-black dark:text-white leading-12;
+    }
+  
+    h3 {
+      @apply uppercase text-[2em] font-medium text-black dark:text-white;
+    }
+  
+    h4 {
+      @apply uppercase text-[1em] font-semibold text-black dark:text-white tracking-tighter;
+    }
+  
+    p {
+      @apply text-base leading-[1.1] text-black dark:text-white;
+    }
+}
+
+@layer components {
+    /* button {
+      @apply inline-block rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-normal uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white
+      } */
+}

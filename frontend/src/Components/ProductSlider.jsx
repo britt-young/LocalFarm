@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, {useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
