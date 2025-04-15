@@ -57,9 +57,9 @@ const ProductSlider = () => {
 
   return (
     <div className="relative w-full max-w-screen-xl mx-auto overflow-hidden mb-20">
-      <div className="flex flex-row">
+      <div className="flex flex-row items-center">
         <button
-          className="text-black p-2 rounded-full text-2xl"
+          className="h-10 text-black p-2 rounded-full text-2xl"
           onClick={prevImage}
         >
           <FaArrowLeft />
@@ -88,7 +88,7 @@ const ProductSlider = () => {
           </div>
         </div>
         <button
-          className=" text-black p-2 rounded-full text-2xl"
+          className="h-10 text-black p-2 rounded-full text-2xl"
           onClick={nextImage}
         >
           <FaArrowRight />
