@@ -45,9 +45,9 @@ const EventsGrid = () => {
 
   return (
     <div className="container mx-auto p-4 mb-10 mt-10">
-      <h1 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl m-6 text-center">
+      <h2 className="m-6 text-center">
         Upcoming Local Events
-      </h1>
+      </h2>
 
       {/* Location Filter Dropdown */}
       <div className="mb-6 flex justify-start items-center">
@@ -79,7 +79,7 @@ const EventsGrid = () => {
               key={event.id}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <h2 className="text-2xl font-semibold mb-4">{event.title}</h2>
+              <h4 className="mb-4">{event.title}</h4>
 
               {/* Event Image */}
               <img
@@ -88,13 +88,13 @@ const EventsGrid = () => {
                 className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
 
-              <p className="text-md">
+              <p>
                 <strong>Date:</strong> {new Date(event.date).toLocaleString()}
               </p>
-              <p className="text-md mb-4">
+              <p className="mb-4">
                 <strong>Location:</strong> {event.location}
               </p>
-              <p className="text-base text-gray-700">{event.description}</p>
+              <p className="text-gray-700">{event.description}</p>
             </div>
           ))
         )}

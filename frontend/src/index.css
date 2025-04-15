@@ -8,34 +8,34 @@
 } */
 
 @layer base {
-    /* fluid text needs adjusting */
-    body {
-      @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
-    }
-  
-    h1 {
-      @apply text-[4em] font-bold text-black dark:text-white;
-    }
-  
-    h2 {
-      @apply uppercase text-[3em] font-bold text-black dark:text-white leading-12;
-    }
-  
-    h3 {
-      @apply text-[2em] font-medium text-black dark:text-white;
-    }
-  
-    h4 {
-      @apply text-[1em] font-semibold text-black dark:text-white tracking-tighter;
-    }
-  
-    p {
-      @applytext-base leading-[1.1] text-black dark:text-white;
-    }
+  /* fluid text needs adjusting */
+  body {
+    @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
+  }
+
+  h1 {
+    @apply font-bold leading-tight text-black text-6xl;
+  }
+
+  h2 {
+    @apply font-bold leading-tight text-black text-5xl;
+  }
+
+  h3 {
+    @apply font-semibold leading-tight text-black text-4xl;
+  }
+
+  h4 {
+    @apply font-semibold leading-tight text-black text-2xl;
+  }
+
+  p {
+    @apply text-base leading-tight text-black;
+  }
 }
 
 @layer components {
-    button {
-      @apply cursor-pointer
-      }
+  button {
+    @apply cursor-pointer;
+  }
 }

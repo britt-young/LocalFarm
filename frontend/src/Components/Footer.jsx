@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-neutral-700 dark:text-white/75 lg:text-left">
-      <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
-        <div className="me-12 hidden lg:block text-black">
-          <span>Stay connected on all our social media platforms:</span>
-        </div>
+    <footer className="bg-lime-800 text-center text-surface/75 lg:text-left">
+      <div className="border-b-2 p-6 border-white/10 lg:justify-between">
         {/* <!-- Social network icons container --> */}
-        <div className="flex justify-center text-black">
+        <div className="flex items-center justify-end text-black">
+          <div className="me-5 text-black">
+            <p>Stay connected on all our social media platforms:</p>
+          </div>
           {/* Facebook */}
           <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
             <svg
@@ -67,38 +67,37 @@ const Footer = () => {
         <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* <!-- Bottom section --> */}
           <div className="">
-            <h6 className="text-black mb-4 flex justify-center font-semibold uppercase md:justify-start">
-              Proud partners of the community</h6>
-            <ul className=" text-surface dark:text-white">
-              <li className="mb-4">
-                Downtown Market Tallahassee
-              </li>
-              <li className="mb-4">
-                Parrish Farm to Table Restaurant
-              </li>
-              <li className="mb-4">
-                Tallahassee Farmers Market
-              </li>
+          <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
+              Proud partners of the community
+            </h5>
+            <ul className=" text-surface">
+              <li className="mb-1">Downtown Market Tallahassee</li>
+              <li className="mb-1">Parrish Farm to Table Restaurant</li>
+              <li className="mb-1">Tallahassee Farmers Market</li>
             </ul>
           </div>
 
           {/* <!-- Useful links section --> */}
           <div>
-            <h6 className="text-black mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
               Useful links
-            </h6>
-            <p className="mb-4">
-              <a href="/Privacy">Privacy Statement</a>
-            </p>
-            <p>
-              <a href="/Terms">Terms & Conditions</a>
-            </p>
+            </h5>
+            <ul className="mb-1">
+              <li>
+                <a href="/Privacy">Privacy Statement</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="/Terms">Terms & Conditions</a>
+              </li>
+            </ul>
           </div>
           {/* <!-- Contact section --> */}
           <div>
-            <h6 className="text-black mb-4 flex justify-center font-semibold uppercase md:justify-start">
+            <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
               Contact
-            </h6>
+            </h5>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg
@@ -146,8 +145,8 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-zinc-50 p-4 text-center">
-        <span>© 2024 Copyright: </span>
+      <div className="bg-black text-white p-1 text-center">
+        <span>© 2024 </span>
         <a className="font-semibold" href="https://gulfcoastwdd.com/">
           Gulf Coast Web Design & Development
         </a>

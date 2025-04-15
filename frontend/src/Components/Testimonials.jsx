@@ -7,14 +7,14 @@ const Testimonials = () => {
   return (
     <div className="h-full flex justify-center items-center bg-lime-800 shadow-inner shadow-lime-300">
       <div data-aos="zoom-in" data-aos-duration="1000" className="m-10 lg:mx-60">
-        <h5 className="flex justify-center items-center text-2xl font-bold uppercase">
+        <h4 className="flex justify-center items-center">
           John Lesterman
-        </h5>
-        <h6 className="flex justify-center items-center mb-4 text-white dark:white">
+        </h4>
+        <h5 className="flex justify-center items-center mb-4">
           Chef at Parrish Farm to Table Restaurant
-        </h6>
-        <p className="flex justify-center items-center text-center mb-4 text-black dark:text-white">
-          <span className="inline-block pe-4 [&>svg]:w-5">
+        </h5>
+        <p className="flex justify-center text-center mb-4">
+          <span className="inline-block pe-4 [&>svg]:w-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -33,7 +33,7 @@ const Testimonials = () => {
           flavors. Local Farm is a key partner in my kitchen, providing top-notch
           ingredients that align perfectly with my culinary philosophy. Highly
           recommended!
-          <span className="inline-block ps-4 [&>svg]:w-5">
+          <span className="inline-block ps-4 [&>svg]:w-3">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               {/* <!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
               <path d="M448 296c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72zm-256 0c0 66.3-53.7 120-120 120l-8 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l8 0c30.9 0 56-25.1 56-56l0-8-64 0c-35.3 0-64-28.7-64-64l0-64c0-35.3 28.7-64 64-64l64 0c35.3 0 64 28.7 64 64l0 32 0 32 0 72z" />
