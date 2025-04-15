@@ -9,7 +9,7 @@ import eggs from "../assets/imgs/products/eggs.png"
 import fruit from "../assets/imgs/products/fruit.png"
 import spices from "../assets/imgs/products/spices.png"
 import grain from "../assets/imgs/products/grain.png"
-import feed from "../assets/imgs/products/grain.png"
+import feed from "../assets/imgs/products/feed.png"
 
 const ProductSlider = () => {
   const navigate = useNavigate();
