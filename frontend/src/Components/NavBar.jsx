@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
       {/* Main navigation container */}
       <nav
-        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-green-900 lg:flex-wrap lg:justify-start lg:py-4"
+        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-lime-900 lg:flex-wrap lg:justify-start lg:py-4"
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           {/* Hamburger button for mobile view */}
@@ -46,7 +46,7 @@ const NavBar = () => {
             <ul className="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
               <li className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black focus:text-black dark:text-white/60 dark:hover:text-white dark:focus:text-white lg:px-2"
+                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/"
                 >
                   Homepage
@@ -54,7 +54,7 @@ const NavBar = () => {
               </li>
               <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black focus:text-black dark:text-white/60 dark:hover:text-white dark:focus:text-white lg:px-2"
+                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/about"
                 >
                   About Local
@@ -62,7 +62,7 @@ const NavBar = () => {
               </li>
               <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black focus:text-black dark:text-white/60 dark:hover:text-white dark:focus:text-white lg:px-2"
+                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/events"
                 >
                   Event Schedule
@@ -70,7 +70,7 @@ const NavBar = () => {
               </li>
               <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-black/60 transition duration-200 hover:text-black focus:text-black dark:text-white/60 dark:hover:text-white dark:focus:text-white lg:px-2"
+                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/products"
                 >
                   Our Products

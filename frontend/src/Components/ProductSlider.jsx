@@ -2,14 +2,14 @@ import React, {useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
-import veggies from "../assets/imgs/products/veggies.png";
-import meat from "../assets/imgs/products/meat.png";
-import dairy from "../assets/imgs/products/dairy.png";
-import grain from "../assets/imgs/products/grain.png";
-import spices from "../assets/imgs/products/spices.png";
-import fruit from "../assets/imgs/products/fruit.png";
-import eggs from "../assets/imgs/products/eggs.png";
-import feed from "../assets/imgs/products/feed.png";
+import veggies from "../assets/imgs/products/veggies.png"
+import meat from "../assets/imgs/products/meat.png"
+import dairy from "../assets/imgs/products/dairy.png"
+import eggs from "../assets/imgs/products/eggs.png"
+import fruit from "../assets/imgs/products/fruit.png"
+import spices from "../assets/imgs/products/spices.png"
+import grain from "../assets/imgs/products/grain.png"
+import feed from "../assets/imgs/products/grain.png"
 
 const ProductSlider = () => {
   const navigate = useNavigate();
@@ -74,7 +74,7 @@ const ProductSlider = () => {
                     alt={image.alt}
                     className="w-[250px] h-[250px] object-cover rounded-lg"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-35 flex justify-center items-center opacity-100 rounded-lg">
+                  <div className="absolute bg-black/30 inset-0 flex justify-center items-center rounded-lg">
                     <div
                       className="text-white text-lg font-bold text-center cursor-pointer z-10"
                       onClick={() => handleNavigate()}
