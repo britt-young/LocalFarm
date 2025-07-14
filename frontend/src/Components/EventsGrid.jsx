@@ -18,7 +18,7 @@ const EventsGrid = () => {
   }, [selectedLocation]);
 
   return (
-    <div className="container mx-auto p-4 mb-10 mt-10">
+    <div className="container max-w-7xl mx-auto p-4 mb-10 mt-10 min-h-screen">
       <h2 className="m-6 text-center text-2xl font-semibold">
         Upcoming Local Events
       </h2>
@@ -32,9 +32,9 @@ const EventsGrid = () => {
           id="location"
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
-          className="border border-gray-300 p-2 rounded-lg"
+          className="cursor-pointer border border-gray-300 p-1 rounded-lg "
         >
-          <option value="">All locations</option>
+          <option value="">See All</option>
           {locations.map((location) => (
             <option key={location} value={location}>
               {location}
@@ -44,7 +44,7 @@ const EventsGrid = () => {
       </div>
 
       {/* Display Events */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-10 md:mx-5 lg:mx-0 gap-6">
         {filteredEvents.length === 0 ? (
           <p className="text-center text-xl">
             No events found for the selected location.
@@ -53,13 +53,13 @@ const EventsGrid = () => {
           filteredEvents.map((event) => (
             <article
               key={event.id}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 transform"
             >
               <h3 className="mb-4 text-xl font-bold">{event.title}</h3>
               <img
                 src={event.image || "/default-image.jpg"}
                 alt={event.title}
-                className="w-full h-48 object-cover rounded-t-lg mb-4"
+                className="w-full h-50 object-cover rounded-t-lg mb-4"
               />
               <p>
                 <strong>Date:</strong> {new Date(event.date).toLocaleString()}
