@@ -1,4 +1,3 @@
-import React from "react";
 import EventsGrid from "../Components/EventsGrid";
 
 const Events = () => {

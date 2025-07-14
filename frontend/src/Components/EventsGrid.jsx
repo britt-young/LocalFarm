@@ -1,61 +1,37 @@
-import React, { useState, useEffect } from "react";
+// components/EventsGrid.jsx
+import events from "../../public/data/events.json";
+import { useState, useMemo } from "react";
 
 const EventsGrid = () => {
-  const [events, setEvents] = useState([]); // Initially empty array
-  const [filteredEvents, setFilteredEvents] = useState([]); // Events to display
-  const [selectedLocation, setSelectedLocation] = useState(""); // Selected location for filtering
+  const [selectedLocation, setSelectedLocation] = useState("");
 
-  // Extract unique locations for the filter dropdown
-  const [locations, setLocations] = useState([]);
+  // Unique locations for filtering
+  const locations = useMemo(
+    () => [...new Set(events.map((event) => event.location))],
+    []
+  );
 
-  // Fetch event data on component mount
-  useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        const response = await fetch("data/events.json"); // Path to your JSON file in public folder
-        const data = await response.json();
-        setEvents(data);
-        setFilteredEvents(data);
-        
-        // Extract unique locations for the filter dropdown
-        const uniqueLocations = [...new Set(data.map((event) => event.location))];
-        setLocations(uniqueLocations);
-      } catch (error) {
-        console.error("Error fetching event data:", error);
-      }
-    };
-
-    fetchEvents();
-  }, []); // Empty array ensures this runs only once, on component mount
-
-  // Handle location filter change
-  const handleLocationChange = (event) => {
-    const location = event.target.value;
-    setSelectedLocation(location);
-
-    // Filter events based on selected location
-    if (location) {
-      const filtered = events.filter((event) => event.location === location);
-      setFilteredEvents(filtered);
-    } else {
-      // Reset to show all events if no location is selected
-      setFilteredEvents(events);
-    }
-  };
+  // Filtered events based on location
+  const filteredEvents = useMemo(() => {
+    if (!selectedLocation) return events;
+    return events.filter((event) => event.location === selectedLocation);
+  }, [selectedLocation]);
 
   return (
     <div className="container mx-auto p-4 mb-10 mt-10">
-      <h2 className="m-6 text-center">
+      <h2 className="m-6 text-center text-2xl font-semibold">
         Upcoming Local Events
       </h2>
 
-      {/* Location Filter Dropdown */}
+      {/* Filter by location */}
       <div className="mb-6 flex justify-start items-center">
-        <label htmlFor="location" className="mr-2 text-lg">Filter by Location</label>
+        <label htmlFor="location" className="mr-2 text-lg">
+          Filter by Location
+        </label>
         <select
           id="location"
           value={selectedLocation}
-          onChange={handleLocationChange}
+          onChange={(e) => setSelectedLocation(e.target.value)}
           className="border border-gray-300 p-2 rounded-lg"
         >
           <option value="">All locations</option>
@@ -75,19 +51,16 @@ const EventsGrid = () => {
           </p>
         ) : (
           filteredEvents.map((event) => (
-            <div
+            <article
               key={event.id}
               className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <h4 className="mb-4">{event.title}</h4>
-
-              {/* Event Image */}
+              <h3 className="mb-4 text-xl font-bold">{event.title}</h3>
               <img
-                src={event.image || "/default-image.jpg"} // Fallback image
+                src={event.image || "/default-image.jpg"}
                 alt={event.title}
                 className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
-
               <p>
                 <strong>Date:</strong> {new Date(event.date).toLocaleString()}
               </p>
@@ -95,7 +68,7 @@ const EventsGrid = () => {
                 <strong>Location:</strong> {event.location}
               </p>
               <p className="text-gray-700">{event.description}</p>
-            </div>
+            </article>
           ))
         )}
       </div>
@@ -104,4 +77,3 @@ const EventsGrid = () => {
 };
 
 export default EventsGrid;
-
