@@ -49,7 +49,7 @@ const NavBar = () => {
                   className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/"
                 >
-                  Homepage
+                  Home
                 </a>
               </li>
               <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
@@ -57,7 +57,7 @@ const NavBar = () => {
                   className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/about"
                 >
-                  About Local
+                  About
                 </a>
               </li>
               <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
@@ -73,7 +73,7 @@ const NavBar = () => {
                   className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/products"
                 >
-                  Our Products
+                  Product Library
                 </a>
               </li>
             </ul>
