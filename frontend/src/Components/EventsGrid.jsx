@@ -65,6 +65,7 @@ const EventsGrid = () => {
               <img
                 src={event.image || "/default-image.jpg"}
                 alt={event.title}
+                loading="lazy"
                 className="w-full h-50 object-cover rounded-t-lg mb-4"
                 onError={(e) => {
                   e.target.onerror = null;
@@ -88,3 +89,4 @@ const EventsGrid = () => {
 };
 
 export default EventsGrid;
+
