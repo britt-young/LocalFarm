@@ -1,21 +1,27 @@
-// components/EventsGrid.jsx
-import events from "../data/events.json";
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 const EventsGrid = () => {
+  const [events, setEvents] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState("");
 
-  // Unique locations for filtering
-  const locations = useMemo(
-    () => [...new Set(events.map((event) => event.location))],
-    []
-  );
+  useEffect(() => {
+    fetch("/data/events.json")
+      .then((res) => res.json())
+      .then((data) => setEvents(data))
+      .catch((err) => {
+        console.error("Failed to fetch events:", err);
+        setEvents([]);
+      });
+  }, []);
 
-  // Filtered events based on location
+  const locations = useMemo(() => {
+    return [...new Set(events.map((event) => event.location).filter(Boolean))];
+  }, [events]);
+
   const filteredEvents = useMemo(() => {
     if (!selectedLocation) return events;
     return events.filter((event) => event.location === selectedLocation);
-  }, [selectedLocation]);
+  }, [selectedLocation, events]);
 
   return (
     <div className="container max-w-7xl mx-auto p-4 mb-10 mt-10 min-h-screen">
@@ -32,7 +38,7 @@ const EventsGrid = () => {
           id="location"
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
-          className="cursor-pointer border border-gray-300 p-1 rounded-lg "
+          className="cursor-pointer border border-gray-300 p-1 rounded-lg"
         >
           <option value="">See All</option>
           {locations.map((location) => (
@@ -60,12 +66,17 @@ const EventsGrid = () => {
                 src={event.image || "/default-image.jpg"}
                 alt={event.title}
                 className="w-full h-50 object-cover rounded-t-lg mb-4"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "/default-image.jpg";
+                }}
               />
               <p>
-                <strong>Date:</strong> {new Date(event.date).toLocaleString()}
+                <strong>Date:</strong>{" "}
+                {event.date ? new Date(event.date).toLocaleString() : "TBD"}
               </p>
               <p className="mb-4">
-                <strong>Location:</strong> {event.location}
+                <strong>Location:</strong> {event.location || "TBA"}
               </p>
               <p className="text-gray-700">{event.description}</p>
             </article>

@@ -1,6 +1,9 @@
+// fetch-events.js
+
 import fs from "fs";
 import path from "path";
 import dotenv from "dotenv";
+import https from "https";
 import fetch from "node-fetch";
 
 dotenv.config();
@@ -15,8 +18,6 @@ if (!AIRTABLE_BASE_ID || !AIRTABLE_PAT) {
 }
 
 const AIRTABLE_API_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`;
-const DATA_DIR = "./public/data";
-const IMAGE_DIR = "./public/images/events";
 
 async function fetchAllRecords() {
   let allRecords = [];
@@ -25,7 +26,9 @@ async function fetchAllRecords() {
   try {
     do {
       const url = new URL(AIRTABLE_API_URL);
-      if (offset) url.searchParams.append("offset", offset);
+      if (offset) {
+        url.searchParams.append("offset", offset);
+      }
 
       const res = await fetch(url.toString(), {
         headers: {
@@ -49,62 +52,62 @@ async function fetchAllRecords() {
   }
 }
 
-async function downloadImage(url, destPath) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to download image: ${res.status} ${res.statusText}`);
-  const buffer = await res.buffer();
-  fs.writeFileSync(destPath, buffer);
+// 🧠 Helper: Download image from URL to local path
+function downloadImage(url, filepath) {
+  return new Promise((resolve, reject) => {
+    const file = fs.createWriteStream(filepath);
+    https
+      .get(url, (response) => {
+        response.pipe(file);
+        file.on("finish", () => {
+          file.close(resolve);
+        });
+      })
+      .on("error", (err) => {
+        fs.unlink(filepath, () => reject(err));
+      });
+  });
 }
 
 async function fetchAndSaveEvents() {
   const records = await fetchAllRecords();
 
-  // Ensure output directories exist
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-  fs.mkdirSync(IMAGE_DIR, { recursive: true });
-
-  // Optionally clear old images
-  fs.readdirSync(IMAGE_DIR).forEach((file) =>
-    fs.unlinkSync(path.join(IMAGE_DIR, file))
-  );
+  const outputDir = "./public/data";
+  const imageDir = "./public/images/events";
+  fs.mkdirSync(outputDir, { recursive: true });
+  fs.mkdirSync(imageDir, { recursive: true });
 
   const formatted = await Promise.all(
     records.map(async (record) => {
-      const { id, fields } = record;
       let localImagePath = null;
 
-      if (fields.Image?.[0]?.url) {
+      const airtableImage = record.fields.Image?.[0]?.url;
+      if (airtableImage) {
+        const imageExt = path.extname(new URL(airtableImage).pathname) || ".jpg";
+        const imageFileName = `${record.id}${imageExt}`;
+        const imagePath = path.join(imageDir, imageFileName);
+        const publicPath = `/images/events/${imageFileName}`;
+
         try {
-          const imageUrl = fields.Image[0].url;
-          const ext = path.extname(new URL(imageUrl).pathname) || ".jpg";
-          const filename = `${id}${ext}`;
-          const savePath = path.join(IMAGE_DIR, filename);
-
-          await downloadImage(imageUrl, savePath);
-
-          localImagePath = `/images/events/${filename}`;
+          await downloadImage(airtableImage, imagePath);
+          localImagePath = publicPath;
         } catch (err) {
-          console.warn(`⚠️ Failed to download image for record ${id}:`, err.message);
+          console.warn(`⚠️ Failed to download image for record ${record.id}:`, err.message);
         }
       }
 
       return {
-        id,
-        title: fields.Title || "",
-        date: fields.Date || "",
-        location: fields.Location || "",
-        description: fields.Description || "",
+        id: record.id,
+        title: record.fields.Title || "",
+        date: record.fields.Date || "",
+        location: record.fields.Location || "",
+        description: record.fields.Description || "",
         image: localImagePath,
       };
     })
   );
 
-  fs.writeFileSync(
-    `${DATA_DIR}/events.json`,
-    JSON.stringify(formatted, null, 2),
-    "utf-8"
-  );
-
+  fs.writeFileSync(`${outputDir}/events.json`, JSON.stringify(formatted, null, 2), "utf-8");
   console.log(`✅ Successfully fetched and saved ${formatted.length} events.`);
 }
 
