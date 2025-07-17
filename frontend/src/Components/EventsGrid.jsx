@@ -1,5 +1,5 @@
 // components/EventsGrid.jsx
-import events from "../../public/data/events.json";
+import events from "../data/events.json";
 import { useState, useMemo } from "react";
 
 const EventsGrid = () => {

@@ -1,20 +1,22 @@
-// pull Airtable data
-
 import fs from "fs";
+import path from "path";
 import dotenv from "dotenv";
+import fetch from "node-fetch";
 
 dotenv.config();
 
 const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
-const AIRTABLE_TABLE_NAME = "Events"; // Your Airtable table name
+const AIRTABLE_TABLE_NAME = "Events";
 const AIRTABLE_PAT = process.env.AIRTABLE_PAT;
 
 if (!AIRTABLE_BASE_ID || !AIRTABLE_PAT) {
-  console.error("Missing Airtable credentials in environment variables.");
+  console.error("❌ Missing Airtable credentials in environment variables.");
   process.exit(1);
 }
 
 const AIRTABLE_API_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_NAME}`;
+const DATA_DIR = "./public/data";
+const IMAGE_DIR = "./public/images/events";
 
 async function fetchAllRecords() {
   let allRecords = [];
@@ -23,9 +25,7 @@ async function fetchAllRecords() {
   try {
     do {
       const url = new URL(AIRTABLE_API_URL);
-      if (offset) {
-        url.searchParams.append("offset", offset);
-      }
+      if (offset) url.searchParams.append("offset", offset);
 
       const res = await fetch(url.toString(), {
         headers: {
@@ -39,7 +39,6 @@ async function fetchAllRecords() {
 
       const data = await res.json();
       allRecords = allRecords.concat(data.records);
-
       offset = data.offset;
     } while (offset);
 
@@ -50,26 +49,58 @@ async function fetchAllRecords() {
   }
 }
 
+async function downloadImage(url, destPath) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to download image: ${res.status} ${res.statusText}`);
+  const buffer = await res.buffer();
+  fs.writeFileSync(destPath, buffer);
+}
+
 async function fetchAndSaveEvents() {
   const records = await fetchAllRecords();
 
-  const formatted = records.map(record => ({
-  id: record.id,
-  title: record.fields.Title || "",
-  date: record.fields.Date || "",
-  location: record.fields.Location || "",
-  description: record.fields.Description || "",
-  image: record.fields.Image?.[0]?.url || null,
-}));
+  // Ensure output directories exist
+  fs.mkdirSync(DATA_DIR, { recursive: true });
+  fs.mkdirSync(IMAGE_DIR, { recursive: true });
 
+  // Optionally clear old images
+  fs.readdirSync(IMAGE_DIR).forEach((file) =>
+    fs.unlinkSync(path.join(IMAGE_DIR, file))
+  );
 
-  const outputDir = "./public/data";
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
+  const formatted = await Promise.all(
+    records.map(async (record) => {
+      const { id, fields } = record;
+      let localImagePath = null;
+
+      if (fields.Image?.[0]?.url) {
+        try {
+          const imageUrl = fields.Image[0].url;
+          const ext = path.extname(new URL(imageUrl).pathname) || ".jpg";
+          const filename = `${id}${ext}`;
+          const savePath = path.join(IMAGE_DIR, filename);
+
+          await downloadImage(imageUrl, savePath);
+
+          localImagePath = `/images/events/${filename}`;
+        } catch (err) {
+          console.warn(`⚠️ Failed to download image for record ${id}:`, err.message);
+        }
+      }
+
+      return {
+        id,
+        title: fields.Title || "",
+        date: fields.Date || "",
+        location: fields.Location || "",
+        description: fields.Description || "",
+        image: localImagePath,
+      };
+    })
+  );
 
   fs.writeFileSync(
-    `${outputDir}/events.json`,
+    `${DATA_DIR}/events.json`,
     JSON.stringify(formatted, null, 2),
     "utf-8"
   );
