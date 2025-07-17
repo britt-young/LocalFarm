@@ -1,17 +1,14 @@
-import React from "react";
 import Header from "../Components/Header";
-import Intro from "../Components/Intro";
-import ProductGrid from "../Components/ProductGrid";
-import Testimonials from "../Components/Testimonials";
+// import ProductGrid from "../Components/ProductGrid";
 import Contact from "../Components/Contact";
+import AwardSection from "../Components/AwardSection";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <Intro />
-      <ProductGrid />
-      <Testimonials className="" />
+      <AwardSection />
+      {/* <ProductGrid /> */}
       <Contact />
     </div>
   );

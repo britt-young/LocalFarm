@@ -28,23 +28,30 @@ const ProductGrid = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mb-20">
-      <div className="grid lg:grid-cols-8 grid-cols-2 mx-10 lg:mx-0 gap-6 justify-center items-center">
-        {images.map((image, index) => (
-          <div key={index} className="relative">
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full object-cover rounded-lg shadow-md"
-            />
-            <div className="absolute inset-0 bg-black/30 rounded-lg flex items-center justify-center">
-              <p className="text-white font-semibold text-lg">{image.text}</p>
+    <div className="max-w-7xl mx-auto my-20">
+      <h4 className="flex text-center justify-center my-10 text-black">
+        Your reliable source of fresh, high quality produce and proteins from
+        our established growers
+      </h4>
+
+      <div >
+        <div className="grid lg:grid-cols-8 grid-cols-2 mx-10 lg:mx-0 gap-6 justify-center items-center">
+          {images.map((image, index) => (
+            <div key={index} className="relative">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full object-cover rounded-lg shadow-md"
+              />
+              <div className="absolute inset-0 bg-black/30 rounded-lg flex items-center justify-center">
+                <p className="text-white font-semibold text-lg">{image.text}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center mt-10">
-        <button onClick={handleNavigate}>View product library</button>
+          ))}
+        </div>
+        <div className="flex justify-center mt-10">
+          <button onClick={handleNavigate}>View product library</button>
+        </div>
       </div>
     </div>
   );
