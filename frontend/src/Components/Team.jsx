@@ -65,7 +65,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div>
+    <div className='min-h-screen mb-20'>
       <h3 className="flex justify-center my-10">
         Meet The Team
       </h3>

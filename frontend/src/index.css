@@ -14,19 +14,19 @@
   }
 
   h1 {
-    @apply font-bold leading-tight text-black text-6xl;
+    @apply font-bold leading-tight text-black lg:text-6xl text-5xl;
   }
 
   h2 {
-    @apply font-bold leading-tight text-black text-5xl;
+    @apply font-bold leading-tight text-black lg:text-5xl text-4xl;
   }
 
   h3 {
-    @apply font-semibold leading-tight text-black text-4xl;
+    @apply font-semibold leading-tight text-black lg:text-4xl text-2xl;
   }
 
   h4 {
-    @apply font-semibold leading-tight text-black text-2xl;
+    @apply font-semibold leading-tight text-black lg:text-3xl text-xl;
   }
 
   p {
@@ -36,6 +36,6 @@
 
 @layer components {
   button {
-    @apply cursor-pointer;
+    @apply cursor-pointer inline-block rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-normal uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white;
   }
 }
