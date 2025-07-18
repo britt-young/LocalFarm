@@ -1,14 +1,18 @@
 import Header from "../Components/Header";
 // import ProductGrid from "../Components/ProductGrid";
 import Contact from "../Components/Contact";
-import AwardSection from "../Components/AwardSection";
+import HomeAbout from "../Components/HomeAbout";
+// import AwardSection from "../Components/AwardSection";
+
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <AwardSection />
-      {/* <ProductGrid /> */}
+      <HomeAbout />
+      {/* Uncomment the following lines to include ProductGrid and AwardSection components */}
+      {/* <ProductGrid />
+      <AwardSection /> */}
       <Contact />
     </div>
   );
