@@ -4,7 +4,9 @@ import HomeService3 from "./HomeService3";
 
 const HomeAbout = () => {
   return (
-    <div className="patternBackground py-10">
+    <div className=" 
+                bg-[url('/images/backgrounds/mobile.svg')]
+                bg-no-repeat bg-cover py-10">
         <HomeService1 />
         <HomeService2 />
         <HomeService3 />

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HomeService3 = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto bg-white/50">
       <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5">
         <div className="flex flex-col flex-1 items-start lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
@@ -16,7 +16,7 @@ const HomeService3 = () => {
             <button>Go to calendar</button>
           </Link>
         </div>
-        <div className="grid grid-cols-4 lg:gap-4 lg:w-1/2 w-full">
+        <div className="grid grid-cols-4 md:gap-2 lg:w-1/2 w-full">
           <div className="col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://plus.unsplash.com/premium_photo-1663090216491-61a0a30c5068?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
