@@ -6,7 +6,7 @@ const HomeService3 = () => {
       <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5">
         <div className="flex flex-col flex-1 items-start lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
-            local
+            local community
           </h6>
           <h3 className="text-2xl font-bold">Events & Summer Camps</h3>
           <p className="text-gray-700 mb-5">

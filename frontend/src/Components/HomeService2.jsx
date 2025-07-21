@@ -29,7 +29,7 @@ const HomeService2 = () => {
         </div>
         <div className="flex flex-col flex-1 items-start lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
-            local
+            fresh from the ground
           </h6>
           <h3 className="text-2xl font-bold">U-Pick Orchard</h3>
           <p className="text-gray-700 mb-5">
