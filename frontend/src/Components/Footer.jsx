@@ -1,14 +1,11 @@
-import React from "react";
+
 
 const Footer = () => {
   return (
-    <footer className="bg-lime-800 text-center text-surface/75 lg:text-left">
-      <div className="border-b-2 p-6 border-white/10 lg:justify-between">
+    <footer className="bg-gray-50 text-center text-surface/75 lg:text-left">
+      <div className="border-b-1 p-6 border-lime-900 lg:justify-between mx-5">
         {/* <!-- Social network icons container --> */}
         <div className="flex items-center justify-end text-black">
-          <div className="me-5 text-black">
-            <p>Stay connected on all our social media platforms:</p>
-          </div>
           {/* Facebook */}
           <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
             <svg
@@ -64,30 +61,28 @@ const Footer = () => {
 
       {/* <!-- Footer content container --> */}
       <div className="mx-6 py-5 text-center md:text-left">
-        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid-1 grid md:grid-cols-2 lg:grid-cols-3 gap-2 lg:max-w-7xl lg:mx-auto">
           {/* <!-- Bottom section --> */}
           <div className="">
-          <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
+            <h6 className="mb-1 flex justify-center md:justify-start font-bold">
               Proud partners of the community
-            </h5>
+            </h6>
             <ul className=" text-surface">
-              <li className="mb-1">Downtown Market Tallahassee</li>
-              <li className="mb-1">Parrish Farm to Table Restaurant</li>
-              <li className="mb-1">Tallahassee Farmers Market</li>
+              <li>Downtown Market Tallahassee</li>
+              <li>Parrish Farm to Table Restaurant</li>
+              <li>Tallahassee Farmers Market</li>
             </ul>
           </div>
 
           {/* <!-- Useful links section --> */}
           <div>
-          <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
+            <h6 className="mb-1 flex justify-center md:justify-start font-bold">
               Useful links
-            </h5>
-            <ul className="mb-1">
+            </h6>
+            <ul>
               <li>
                 <a href="/Privacy">Privacy Statement</a>
               </li>
-            </ul>
-            <ul>
               <li>
                 <a href="/Terms">Terms & Conditions</a>
               </li>
@@ -95,9 +90,9 @@ const Footer = () => {
           </div>
           {/* <!-- Contact section --> */}
           <div>
-            <h5 className="mb-4 flex justify-center uppercase md:justify-start font-bold">
+            <h6 className="mb-1 flex justify-center md:justify-start font-bold">
               Contact
-            </h5>
+            </h6>
             <p className="mb-4 flex items-center justify-center md:justify-start">
               <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
                 <svg
@@ -145,9 +140,9 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="bg-black text-white p-1 text-center">
+      <div className="bg-gray-200 text-black p-1 text-center">
         <span>© 2024 </span>
-        <a className="font-semibold" href="https://gulfcoastwdd.com/">
+        <a href="https://gulfcoastwdd.com/">
           Gulf Coast Web Design & Development
         </a>
       </div>
