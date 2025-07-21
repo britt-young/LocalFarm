@@ -20,21 +20,21 @@ const HomeService3 = () => {
           <div className="col-span-4">
             <img
               src="https://images.unsplash.com/photo-1671103977144-742df78811ee?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover rounded-lg h-fit"
+              className="object-cover rounded-lg lg:h-[150px] h-fit md:h-[200px] w-full"
+              alt="Store"
+            />
+          </div>
+          <div className="lg:col-span-2 md:col-span-4 ">
+            <img
+              src="https://images.unsplash.com/photo-1671103977144-742df78811ee?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="object-cover hidden h-fit rounded-lg md:grid md:h-[200px] w-full lg:h-[150px]"
               alt="Store"
             />
           </div>
           <div className="col-span-2">
             <img
               src="https://images.unsplash.com/photo-1671103977144-742df78811ee?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg lg:grid"
-              alt="Store"
-            />
-          </div>
-          <div className="col-span-2">
-            <img
-              src="https://images.unsplash.com/photo-1671103977144-742df78811ee?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg lg:grid"
+              className="object-cover hidden h-fit rounded-lg lg:grid lg:h-[150px] w-full"
               alt="Store"
             />
           </div>
