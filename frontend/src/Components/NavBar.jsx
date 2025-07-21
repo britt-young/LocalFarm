@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const NavBar = () => {
   // State to manage mobile menu toggle
@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
       {/* Main navigation container */}
       <nav
-        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-lime-900 lg:flex-wrap lg:justify-start lg:py-4"
+        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-lime-900 lg:flex-wrap lg:justify-start"
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           {/* Hamburger button for mobile view */}
@@ -44,7 +44,7 @@ const NavBar = () => {
           >
             {/* Left links */}
             <ul className="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
-              <li className="my-4 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
+              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
                 <a
                   className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
                   href="/"
