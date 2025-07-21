@@ -4,11 +4,11 @@ import HomeService3 from "./HomeService3";
 
 const HomeAbout = () => {
   return (
-    <div>
-      <HomeService1 />
-      <HomeService2 />
-      <HomeService3 />
-    </div>
+    <div className="patternBackground py-10">
+        <HomeService1 />
+        <HomeService2 />
+        <HomeService3 />
+      </div>
   );
 };
 

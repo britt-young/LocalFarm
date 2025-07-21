@@ -38,4 +38,10 @@
   button {
     @apply cursor-pointer inline-block rounded border-2 bg-lime-900 border-white px-6 pb-[6px] pt-2 text-xs font-normal uppercase tracking-widest leading-normal text-white transition duration-500 ease-in-out hover:border-black hover:text-black focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-white dark:focus:bg-white;
   }
+  .patternBackground {
+    background-color: #ffffff;
+    background-image: url("../public/images/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
