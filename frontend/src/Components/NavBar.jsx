@@ -11,7 +11,7 @@ const NavBar = () => {
     <div>
       {/* Main navigation container */}
       <nav
-        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-lime-900 lg:flex-wrap lg:justify-start"
+        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-red-950/95 lg:flex-wrap lg:justify-start"
       >
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           {/* Hamburger button for mobile view */}
@@ -46,31 +46,31 @@ const NavBar = () => {
             <ul className="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
               <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
                 <a
-                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
+                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/"
                 >
                   Home
                 </a>
               </li>
-              <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
+                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/about"
                 >
                   About
                 </a>
               </li>
-              <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
+                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/events"
                 >
                   Event Schedule
                 </a>
               </li>
-              <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
                 <a
-                  className="p-0 text-white/80 transition duration-200 hover:font-semibold lg:px-2"
+                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/products"
                 >
                   Product Library
