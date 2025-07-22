@@ -33,7 +33,7 @@ const HomeService2 = () => {
           </h6>
           <h3 className="text-2xl font-bold">U-Pick Orchard</h3>
           <p className="text-gray-700 mb-5">
-            Seasonal u-pick fruits, vegetables and flowers!
+            Seasonal u-pick fruits, vegetables and flowers
           </p>
           <Link to="/products">
             <button>See what's in season</button>

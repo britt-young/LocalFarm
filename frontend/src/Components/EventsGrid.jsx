@@ -25,10 +25,6 @@ const EventsGrid = () => {
 
   return (
     <div className="container max-w-7xl mx-auto p-4 mb-10 mt-10 min-h-screen">
-      <h2 className="m-6 text-center text-2xl font-semibold">
-        Upcoming Local Events
-      </h2>
-
       {/* Filter by location */}
       <div className="mb-6 flex justify-start items-center">
         <label htmlFor="location" className="mr-2 text-lg">
