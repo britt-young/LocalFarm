@@ -52,7 +52,7 @@ const NavBar = () => {
                   Home
                 </a>
               </li>
-              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
                 <a
                   className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/about"
@@ -60,7 +60,7 @@ const NavBar = () => {
                   About
                 </a>
               </li>
-              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
                 <a
                   className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/events"
@@ -68,7 +68,7 @@ const NavBar = () => {
                   Event Schedule
                 </a>
               </li>
-              <li className="my-2 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
+              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
                 <a
                   className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
                   href="/products"
