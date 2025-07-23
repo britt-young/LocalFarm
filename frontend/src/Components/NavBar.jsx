@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { PiFarmFill } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   // State to manage mobile menu toggle
@@ -10,20 +12,18 @@ const NavBar = () => {
   return (
     <div>
       {/* Main navigation container */}
-      <nav
-        className="relative flex w-full flex-nowrap items-center justify-between py-2 shadow-dark-mild bg-red-950/95 lg:flex-wrap lg:justify-start"
-      >
+      <nav className="relative flex w-full flex-nowrap items-center justify-between py-4 bg-white lg:flex-wrap lg:justify-start">
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           {/* Hamburger button for mobile view */}
           <button
-            className="cursour-pointer block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+            className="cursour-pointer block border-0 bg-transparent px-2 text-black hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
             type="button"
             onClick={toggleMenu}
             aria-expanded={isOpen ? "true" : "false"}
             aria-label="Toggle navigation"
           >
             {/* Hamburger icon */}
-            <span className="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200 cursour-pointer">
+            <span className="[&>svg]:w-7 [&>svg]:stroke-black cursour-pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -40,41 +40,48 @@ const NavBar = () => {
 
           {/* Collapsible navbar container */}
           <div
-            className={`lg:flex lg:basis-auto w-full flex-grow ${isOpen ? "block" : "hidden"} mt-2 lg:mt-0`}
+            className={`lg:flex lg:basis-auto w-full flex-grow ${
+              isOpen ? "block" : "hidden"
+            } mt-2 lg:mt-0`}
           >
             {/* Left links */}
-            <ul className="list-style-none me-auto flex flex-col ps-0 lg:mt-1 lg:flex-row">
-              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-2">
-                <a
-                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
-                  href="/"
+            <ul className="list-style-none lg:items-center items-start flex flex-col lg:flex-row lg:gap-4">
+              <PiFarmFill
+                style={{ color: "black", fontSize: "2.0rem" }}
+                className="hidden lg:block"
+              />
+              <li className="my-2 lg:my-0 ps-0">
+                <Link
+                  to="/"
+                  className="p-0 text-black transition duration-200 hover:font-semibold"
                 >
                   Home
-                </a>
+                </Link>
               </li>
-              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
-                <a
-                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
-                  href="/about"
+
+              <li className="my-2 ps-0 lg:my-0">
+                <Link
+                  className="p-0 text-black transition duration-200 hover:font-semibold"
+                  to="/about"
                 >
-                  About
-                </a>
+                  About Us
+                </Link>
               </li>
-              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
-                <a
-                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
-                  href="/events"
+              <li className="my-2 ps-0 lg:my-0">
+                <Link
+                  className="p-0 text-black transition duration-200 hover:font-semibold"
+                  to="/events"
                 >
                   Event Schedule
-                </a>
+                </Link>
               </li>
-              <li className="my-2 ps-2 lg:my-0 lg:pe-1 lg:ps-0">
-                <a
-                  className="p-0 text-white transition duration-200 hover:font-semibold lg:px-2"
-                  href="/products"
+              <li className="my-2 ps-0 lg:my-0">
+                <Link
+                  className="p-0 text-black transition duration-200 hover:font-semibold"
+                  to="/products"
                 >
                   Product Library
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
