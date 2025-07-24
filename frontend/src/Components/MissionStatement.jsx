@@ -12,7 +12,7 @@ const MissionStatement = () => {
             <h3>
               About Local
             </h3>
-            <p className="mb-4">
+            <h6 className="mb-4">
               We are a community-driven agricultural resource connecting local
               farmers and local families. Our mission is to promote sustainable
               agriculture, provide a fun outdoor experience, and share local
@@ -22,8 +22,8 @@ const MissionStatement = () => {
               </span>
               , and{" "}
               <span className="font-bold">Tallahassee Farmers Market</span>.
-              Come visit us at our next pop-up event!
-            </p>
+              
+            </h6>
           </div>
           <Stats />
         </div>

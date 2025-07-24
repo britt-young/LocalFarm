@@ -5,7 +5,7 @@ import maze from "../assets/imgs/maze.jpg"
 
 const Stats = () => {
   return (
-        <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-16 gap-x-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 lg:gap-8 gap-15 mt-10 text-center lg:mt-16 gap-x-8 md:grid-cols-4">
                     <div>
                         <img src={zoo} alt="Petting Zoo" className="mx-auto mb-4 w-64 h-64 rounded-lg shadow-lg" />
                         {/* <h2>
