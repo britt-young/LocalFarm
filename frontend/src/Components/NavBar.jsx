@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PiFarmFill } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import logo from "../assets/logos/logo.svg";
 
 const NavBar = () => {
   // State to manage mobile menu toggle
@@ -45,11 +46,12 @@ const NavBar = () => {
             } mt-2 lg:mt-0`}
           >
             {/* Left links */}
-            <ul className="list-style-none lg:items-center items-start flex flex-col lg:flex-row lg:gap-4">
-              <PiFarmFill
+            <ul className="list-style-none lg:items-center items-start flex flex-col lg:flex-row lg:gap-8">
+              <img src={logo} alt="Logo" className="h-15 w-25 lg:block hidden" />
+              {/* <PiFarmFill
                 style={{ color: "black", fontSize: "2.0rem" }}
                 className="hidden lg:block"
-              />
+              /> */}
               <li className="my-2 lg:my-0 ps-0">
                 <Link
                   to="/"
