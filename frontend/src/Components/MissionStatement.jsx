@@ -10,15 +10,20 @@ const MissionStatement = () => {
         <div className="max-w-7xl px-4 mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h3>
-              The Local Farm Mission
+              About Local
             </h3>
-            <h5 className="mt-3 text-gray-600 md:mt-8">
-              At Local Farm, our mission is to cultivate fresh, sustainable, and
-              farm-to-table products that nourish both body and community. We
-              are dedicated to growing high-quality, locally sourced food while
-              fostering a deep connection between our farm and the people we
-              serve
-            </h5>
+            <p className="mb-4">
+              We are a community-driven agricultural resource connecting local
+              farmers and local families. Our mission is to promote sustainable
+              agriculture, provide a fun outdoor experience, and share local
+              food with everyone. We are proud partners with{" "}
+              <span className="font-bold">
+                Market on Main Tally, Parrish Farm to Table Restaurant
+              </span>
+              , and{" "}
+              <span className="font-bold">Tallahassee Farmers Market</span>.
+              Come visit us at our next pop-up event!
+            </p>
           </div>
           <Stats />
         </div>

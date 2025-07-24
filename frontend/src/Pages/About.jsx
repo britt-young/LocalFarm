@@ -10,7 +10,7 @@ import Team from '../Components/Team'
 export const About = () => {
   return (
     <div>
-      <AboutBanner/>
+      {/* <AboutBanner/> */}
 
       {/* <AboutVideo /> */}
       <MissionStatement />
