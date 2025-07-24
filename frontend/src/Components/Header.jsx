@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/logos/sample-logo.svg";
+
 
 
 const Header = () => {
@@ -13,12 +13,7 @@ const Header = () => {
               <div className="text-center uppercase md:px-12 ">
                 <h1 className="text-white text-7xl">Local Farm</h1>
                 <h5 className="text-white">Fresh food & family fun</h5>
-                {/* <img src={logo} alt="Logo" className="w-full mb-5" /> */}
-                {/* <Link to="/events">
-                  <button>
-                    Current pop-up locations
-                  </button>
-                </Link> */}
+                
               </div>
             </div>
           </div>
