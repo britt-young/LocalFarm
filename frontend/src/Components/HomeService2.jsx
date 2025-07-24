@@ -8,7 +8,7 @@ const HomeService2 = () => {
           <div className="col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://images.unsplash.com/photo-1607358049845-4360f06be5b7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover rounded-lg lg:h-[150px] h-fit md:h-[200px] w-full"
+              className="object-cover rounded-lg lg:h-[200px] h-fit md:h-[200px] w-full"
               alt="orchard"
             />
           </div>
