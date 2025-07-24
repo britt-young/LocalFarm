@@ -13,7 +13,7 @@ const Home = () => {
       {/* Uncomment the following lines to include ProductGrid and AwardSection components */}
       {/* <ProductGrid />
       <AwardSection /> */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };

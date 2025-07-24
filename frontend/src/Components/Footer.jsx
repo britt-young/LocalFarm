@@ -91,12 +91,44 @@ const Footer = () => {
                 </a>
               </div>
               {/* Contact section */}
-              <div className="text-left text-sm indent-4">
-                <ul>
-                  <li>+1 (800) 123-4567</li>
-                  <li>localfarm@example.com</li>
-                  <li>333 Farm Ln., Tallahassee, FL</li>
-                </ul>
+              <div className="flex flex-col items-start justify-center lg:p-2 p-0 text-sm">
+                {/* Local Grocery */}
+                <div className="block min-w-full text-left mb-4">
+                  <div>
+                    <h5 className="font-bold">Local Grocery</h5>
+                    {/* <p className="mb-2 ">
+                      All products sourced from Local Farm land and packaged
+                      on-site
+                    </p> */}
+                    <ul >
+                      <li>1234 Main St, Tallahassee, FL 32301</li>
+                      <li className="indent-2">+1 (800) 123-4567</li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Market Booth */}
+                <div className="block min-w-full text-left">
+                  <div>
+                    <h5 className="font-bold">Market Booth</h5>
+                    <h6>Booth #1111, Town Sqaure</h6>
+                    {/* <p className="mb-4 ">
+                      Limited selection of our most popular products
+                    </p> */}
+                  </div>
+                </div>
+
+                {/* Pop-Up Stand */}
+                <div className="block min-w-full text-left">
+                  <div>
+                    <h5 className="font-bold">Pop-Up Stand</h5>
+                    <Link to="/events" className="mb-4">
+                      <p className="text-orange-400 hover:text-orange-400/50">
+                        (see our current pop-up locations)
+                      </p>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             {/* Links section */}
