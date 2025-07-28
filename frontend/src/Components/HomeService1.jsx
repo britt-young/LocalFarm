@@ -9,10 +9,9 @@ const HomeService1 = () => {
             buy local
           </h6>
           <h4>General Store</h4>
-          <p className="text-gray-700 mb-5">
-            Shop all your favorite local products, including our famous apple
-            pies
-          </p>
+          <h5 className="text-gray-700 mb-5">
+            Shop all your favorite local products, including our famous apple pies and local honeycomb
+          </h5>
           <Link to="/products">
             <button>View products</button>
           </Link>
@@ -21,21 +20,21 @@ const HomeService1 = () => {
           <div className="col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://images.unsplash.com/photo-1647553756926-21a62021b9d2?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover rounded-lg lg:h-[200px] h-fit md:h-[200px] w-full"
+              className="object-cover rounded-lg lg:h-[275px] h-fit md:h-[275px] w-full"
               alt="seed packets"
             />
           </div>
           <div className="lg:col-span-2 md:col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg md:grid md:h-[200px] w-full lg:h-[150px]"
+              className="object-cover hidden h-fit rounded-lg md:grid md:h-[275px] w-full lg:h-[200px]"
               alt="pie"
             />
           </div>
           <div className="col-span-2">
             <img
               src="https://plus.unsplash.com/premium_photo-1664273586787-1c60bc2ea389?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg lg:grid lg:h-[150px] w-full"
+              className="object-cover hidden h-fit rounded-lg lg:grid lg:h-[200px] w-full"
               alt="honeycomb"
             />
           </div>

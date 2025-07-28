@@ -8,21 +8,21 @@ const HomeService2 = () => {
           <div className="col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://images.unsplash.com/photo-1607358049845-4360f06be5b7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover rounded-lg lg:h-[200px] h-fit md:h-[200px] w-full"
+              className="object-cover rounded-lg lg:h-[275px] h-fit md:h-[275px] w-full"
               alt="orchard"
             />
           </div>
           <div className="lg:col-span-2 md:col-span-4 md:mx-50 lg:mx-0">
             <img
               src="https://images.unsplash.com/photo-1533330265487-9d2bd48b57e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg md:grid md:h-[200px] w-full lg:h-[150px]"
+              className="object-cover hidden h-fit rounded-lg md:grid md:h-[275px] w-full lg:h-[200px]"
               alt="u-pick"
             />
           </div>
           <div className="col-span-2">
             <img
               src="https://images.unsplash.com/photo-1737947292282-aa6ec5c8fd57?q=80&w=679&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="object-cover hidden h-fit rounded-lg lg:grid lg:h-[150px] w-full"
+              className="object-cover hidden h-fit rounded-lg lg:grid lg:h-[200px] w-full"
               alt="sign"
             />
           </div>
@@ -32,9 +32,9 @@ const HomeService2 = () => {
             fresh from the ground
           </h6>
           <h4 >U-Pick Orchard</h4>
-          <p className="text-gray-700 mb-5">
+          <h5 className="text-gray-700 mb-5">
             Seasonal u-pick fruits, vegetables and flowers
-          </p>
+          </h5>
           <Link to="/products">
             <button>See what's in season</button>
           </Link>
