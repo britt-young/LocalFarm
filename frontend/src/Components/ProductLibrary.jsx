@@ -31,7 +31,7 @@ import spring from '../assets/imgs/seasons/spring.png';
 import summer from '../assets/imgs/seasons/summer.png';
 import fall from '../assets/imgs/seasons/fall.png';
 
-const ProductList = () => {
+const ProductLibrary = () => {
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -144,4 +144,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default ProductLibrary;

@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const HomeService3 = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white/50">
-      <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5">
-        <div className="flex flex-col flex-1 items-end text-end lg:w-1/2">
+      <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5 my-10">
+        <div className="flex flex-col flex-1 lg:items-end items-center lg:text-end text-center lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
             local community
           </h6>
-          <h3 className="text-2xl font-bold">Events & Summer Camps</h3>
+          <h4>Events & Summer Camps</h4>
           <p className="text-gray-700 mb-5">
             Join us for a variety of fun and educational activities
           </p>

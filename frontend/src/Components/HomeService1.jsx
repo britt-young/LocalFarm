@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 const HomeService1 = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white/50">
-      <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-15 gap-5">
-        <div className="flex flex-col flex-1 items-end text-end lg:w-1/2">
+      <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center p-4 lg:gap-15 gap-5 my-10">
+        <div className="flex flex-col flex-1 lg:items-end items-center lg:text-end text-center lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
             buy local
           </h6>
-          <h3 className="text-2xl font-bold">General Store</h3>
+          <h4>General Store</h4>
           <p className="text-gray-700 mb-5">
-            Shop all your favorite local products, including our famous apple pies
+            Shop all your favorite local products, including our famous apple
+            pies
           </p>
           <Link to="/products">
             <button>View products</button>
@@ -40,8 +41,8 @@ const HomeService1 = () => {
           </div>
         </div>
       </div>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default HomeService1
+export default HomeService1;

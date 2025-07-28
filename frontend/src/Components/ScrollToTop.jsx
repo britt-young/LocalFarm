@@ -1,3 +1,4 @@
+//add this to layouts to scroll to top of page on route change
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 

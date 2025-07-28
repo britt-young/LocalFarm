@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const HomeService2 = () => {
   return (
     <div className="max-w-7xl mx-auto bg-white/50">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center p-4 lg:gap-20 gap-5 my-10">
         <div className="grid grid-cols-4 md:gap-2 lg:w-1/2 w-full">
           <div className="col-span-4 md:mx-50 lg:mx-0">
             <img
@@ -27,11 +27,11 @@ const HomeService2 = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-start lg:w-1/2">
+        <div className="flex flex-col flex-1 lg:items-start items-center lg:text-start text-center lg:w-1/2">
           <h6 className="uppercase font-semibold text-xs text-gray-600">
             fresh from the ground
           </h6>
-          <h3 className="text-2xl font-bold">U-Pick Orchard</h3>
+          <h4 >U-Pick Orchard</h4>
           <p className="text-gray-700 mb-5">
             Seasonal u-pick fruits, vegetables and flowers
           </p>

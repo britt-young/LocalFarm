@@ -25,18 +25,19 @@ const EventsGrid = () => {
 
   return (
     <div className="container max-w-7xl mx-auto p-4 mb-10 mt-10 min-h-screen">
+      <h3 className="flex justify-center">Upcoming Local Events</h3>
       {/* Filter by location */}
-      <div className="mb-6 flex justify-start items-center">
-        <label htmlFor="location" className="mr-2 text-lg">
-          Filter by Location
+      <div className="my-6 flex justify-start items-center">
+        <label htmlFor="location" className="mr-2 text-base">
+          Filter by location:
         </label>
         <select
           id="location"
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
-          className="cursor-pointer border border-gray-300 p-1 rounded-lg"
+          className="cursor-pointer px-2 py-0 border border-gray-300 p-1 rounded-lg text-gray-600"
         >
-          <option value="">See All</option>
+          <option value="">All Locations</option>
           {locations.map((location) => (
             <option key={location} value={location}>
               {location}
@@ -85,4 +86,3 @@ const EventsGrid = () => {
 };
 
 export default EventsGrid;
-
