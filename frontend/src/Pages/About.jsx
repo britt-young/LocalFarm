@@ -11,8 +11,9 @@ export const About = () => {
     <div>
       <MissionStatement />
       {/* <AboutBanner/> */}
-      <Team />
       <AwardSection />
+      <Team />
+      
       {/* <AboutVideo /> */}
     </div>
   );

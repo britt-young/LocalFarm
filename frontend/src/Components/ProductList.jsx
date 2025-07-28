@@ -108,21 +108,21 @@ const ProductList = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h2 className="flex justify-center m-5 text-2xl font-semibold">Product Library</h2>
+    <div className="min-h-screen bg-gray-100 lg:py-20 py-16">
+      <h3 className="flex justify-center">Product Library</h3>
 
       {/* Search */}
       <div className="mb-8 flex justify-center">
         <input
           type="text"
-          placeholder="Search products..."
-          className="px-4 py-2 w-80 border border-gray-300 rounded-lg"
+          placeholder="search products..."
+          className="px-2 py-0 w-80 border border-gray-300 rounded-lg"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
       </div>
 
-      {/* Products */}
+      {/* Imported Product.jsx */}
       <div className="flex flex-wrap gap-6 justify-center mt-8">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (

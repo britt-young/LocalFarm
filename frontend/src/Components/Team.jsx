@@ -1,4 +1,3 @@
-
 import john from "../assets/imgs/people/farmerjohn.jpg";
 import jane from "../assets/imgs/people/farmerjane.webp";
 import sara from "../assets/imgs/people/farmersara.jpg";
@@ -65,10 +64,8 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className='min-h-screen mb-20'>
-      <h3 className="flex justify-center my-10">
-        Meet The Team
-      </h3>
+    <div className="min-h-screen my-16 lg:my-20">
+      <h3 className="flex justify-center mb-10 ">Meet the Local Team</h3>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 max-w-7xl mx-auto p-4">
         {teamMembers.map(({ id, img, alt, name, title, description }) => (
@@ -95,6 +92,5 @@ const Team = () => {
     </div>
   );
 };
-
 
 export default Team;

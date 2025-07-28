@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Stats from "./stats";
 
 const MissionStatement = () => {
@@ -6,7 +6,7 @@ const MissionStatement = () => {
     <div className="">
       {/* Values/Mission About*/}
 
-      <section className="py-10 bg-zinc-50 py-16 lg:py-10">
+      <section className="bg-zinc-50 py-16 lg:py-10">
         <div className="max-w-7xl px-4 mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h3>
@@ -24,8 +24,12 @@ const MissionStatement = () => {
               <span className="font-bold">Tallahassee Farmers Market</span>.
               
             </h6>
+            <Link to="/events">
+            <button className="my-5">See all upcoming events</button>
+          </Link>
           </div>
           <Stats />
+          
         </div>
       </section>
     </div>
