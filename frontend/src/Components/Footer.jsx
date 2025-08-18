@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-50 text-center text-surface/75 lg:text-left">
-      {/* <div className="border-b-1 p-6 border-gray-200 lg:justify-between mx-5">
-        
-      </div> */}
-
       {/* <!-- Footer content container --> */}
       <div className="mx-6 py-15 text-left">
         <div className="grid-1 grid md:grid-cols-2 gap-10 lg:gap-60 lg:max-w-7xl lg:mx-auto p-2">
