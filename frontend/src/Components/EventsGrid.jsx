@@ -4,6 +4,7 @@ const EventsGrid = () => {
   const [events, setEvents] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState("");
 
+  // Pre-generate JSON at build-time
   useEffect(() => {
     fetch("/data/events.json")
       .then((res) => res.json())
@@ -60,13 +61,13 @@ const EventsGrid = () => {
             >
               <h3 className="mb-4 text-xl font-bold">{event.title}</h3>
               <img
-                src={event.image || "/default-image.jpg"}
+                src={event.image || "/default-image.png"}
                 alt={event.title}
                 loading="lazy"
                 className="w-full h-50 object-cover rounded-t-lg mb-4"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = "/default-image.jpg";
+                  e.target.src = "/default-image.png";
                 }}
               />
               <p>

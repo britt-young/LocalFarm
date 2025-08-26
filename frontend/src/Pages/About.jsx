@@ -11,8 +11,10 @@ export const About = () => {
       <AboutHeader />
       <MissionStatement />
       {/* <AboutBanner/> */}
-      <AwardSection />
-      <Team />
+      <div className="lazyload">
+        <AwardSection />
+        <Team />
+      </div>
 
       {/* <AboutVideo /> */}
     </div>
