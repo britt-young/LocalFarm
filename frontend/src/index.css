@@ -2,8 +2,8 @@
 @import "./styles/fonts.css";
 
 @theme {
-  --font-baloo: 'Baloo Bhaina 2', sans-serif;
-/* --breakpoint-*: initial;
+  --font-baloo: "Baloo Bhaina 2", sans-serif;
+  /* --breakpoint-*: initial;
     --breakpoint-xs: 320px;
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;
