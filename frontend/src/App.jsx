@@ -8,7 +8,7 @@ import About from './Pages/About'
 import Events from './Pages/Events'
 import Products from './Pages/Products'
 import Privacy from './Pages/Privacy'
-import Terms from './Pages/Terms'
+import TermsPage from './Pages/TermsPage'
 
 
 function App() {
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
       {/* Can add nested service routes too */}
       {/* <Route path ='services/:serviceId' element={<Services />} /> */}
       <Route path ='privacy' element={<Privacy />} />
-      <Route path ='terms' element={<Terms />} />
+      <Route path ='terms' element={<TermsPage />} />
       <Route path ='*' element={<Error />} />
     </Route>
     
