@@ -3,7 +3,7 @@ import horse from "../assets/imgs/horse.jpg"
 import bee from "../assets/imgs/bees.jpg"
 import maze from "../assets/imgs/maze.jpg"
 
-const Stats = () => {
+const AboutStats = () => {
   return (
         <div className="grid grid-cols-1 lg:gap-8 gap-15 mt-10 text-center lg:mt-16 gap-x-8 md:grid-cols-4">
                     <div>
@@ -45,4 +45,4 @@ const Stats = () => {
   )
 }
 
-export default Stats
+export default AboutStats

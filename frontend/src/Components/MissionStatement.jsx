@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Stats from "./stats";
+import Stats from "./AboutStats";
 
 const MissionStatement = () => {
   return (
