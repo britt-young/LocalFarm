@@ -1,181 +1,167 @@
 const PrivacyStatement = () => {
+  const farmName = "Local Farm";
+  const effectiveDate = "August 26, 2025";
+  const lastUpdated = "August 26, 2025";
+
   return (
-    <div>
-      <h1> Privacy Policy for [YOUR SITE TITLE]</h1>
-      <p>
-        {" "}
-        If you require any more information or have any questions about our
-        privacy policy, please feel free to contact us by email at
-        [CONTACT@YOUREMAIL.COM].
-      </p>
-      <p>
-        At [YOUR SITE URL] we consider the privacy of our visitors to be
-        extremely important. This privacy policy document describes in detail
-        the types of personal information is collected and recorded by [YOUR
-        SITE URL] and how we use it.{" "}
-      </p>
-      <p>
-        {" "}
-        <b>Log Files</b>
-        <br /> Like many other Web sites, [YOUR SITE URL] makes use of log
-        files. These files merely logs visitors to the site – usually a standard
-        procedure for hosting companies and a part of hosting services's
-        analytics. The information inside the log files includes internet
-        protocol (IP) addresses, browser type, Internet Service Provider (ISP),
-        date/time stamp, referring/exit pages, and possibly the number of
-        clicks. This information is used to analyze trends, administer the site,
-        track user's movement around the site, and gather demographic
-        information. IP addresses, and other such information are not linked to
-        any information that is personally identifiable.{" "}
-      </p>
-      <p>
-        {" "}
-        <b>Cookies and Web Beacons</b>
-        <br />
-        [YOUR SITE URL] uses cookies to store information about visitors'
-        preferences, to record user-specific information on which pages the site
-        visitor accesses or visits, and to personalize or customize our web page
-        content based upon visitors' browser type or other information that the
-        visitor sends via their browser.{" "}
-      </p>
-      <p>
-        <b>DoubleClick DART Cookie</b>
-        <br />{" "}
-      </p>
-      <p>
-        → Google, as a third party vendor, uses cookies to serve ads on [YOUR
-        SITE URL].
-        <br />
-        <br />
-        → Google's use of the DART cookie enables it to serve ads to our site's
-        visitors based upon their visit to [YOUR SITE URL] and other sites on
-        the Internet. <br />
-        <br />→ Users may opt out of the use of the DART cookie by visiting the
-        Google ad and content network privacy policy at the following URL –{" "}
-        <a href="http://www.google.com/privacy_ads.html">
-          http://www.google.com/privacy_ads.html
-        </a>{" "}
-      </p>
-      <p>
-        <b>Our Advertising Partners</b>
-        <br />{" "}
-      </p>
-      <p>
-        {" "}
-        Some of our advertising partners may use cookies and web beacons on our
-        site. Our advertising partners include ……. <br />
-      </p>
-      <ul>
-        <li>Google</li>
-        <li>Commission Junction</li>
-        <li>Amazon</li>
-        <li>Adbrite</li>
-        <li>Clickbank</li>
-        <li>Yahoo! Publisher Network</li>
-        <li>Chitika</li>
-        <li>Kontera</li>
-      </ul>
-      <p>
-        <em>
-          While each of these advertising partners has their own Privacy Policy
-          for their site, an updated and hyperlinked resource is maintained
-          here:{" "}
-          <a href="https://www.privacypolicyonline.com/privacy-policy-links/">
-            Privacy Policy Links
-          </a>
-          .<br /> <br />
-          You may consult this listing to find the privacy policy for each of
-          the advertising partners of [YOUR SITE URL].
-        </em>
-      </p>
-      <p>
-        {" "}
-        These third-party ad servers or ad networks use technology in their
-        respective advertisements and links that appear on [YOUR SITE URL] and
-        which are sent directly to your browser. They automatically receive your
-        IP address when this occurs. Other technologies (such as cookies,
-        JavaScript, or Web Beacons) may also be used by our site's third-party
-        ad networks to measure the effectiveness of their advertising campaigns
-        and/or to personalize the advertising content that you see on the site.{" "}
-      </p>
-      <p>
-        {" "}
-        [YOUR SITE URL] has no access to or control over these cookies that are
-        used by third-party advertisers.{" "}
-      </p>
-      <p />
-      <p>
-        <b>Third Party Privacy Policies</b>
-        <br />
-        You should consult the respective privacy policies of these third-party
-        ad servers for more detailed information on their practices as well as
-        for instructions about how to opt-out of certain practices. [YOUR SITE
-        URL]'s privacy policy does not apply to, and we cannot control the
-        activities of, such other advertisers or web sites. You may find a
-        comprehensive listing of these privacy policies and their links here:{" "}
-        <a
-          href="https://www.privacypolicyonline.com/privacy-policy-links/"
-          title="Privacy Policy Links"
-        >
-          Privacy Policy Links
-        </a>
-        .
-      </p>
-      <p>
-        {" "}
-        If you wish to disable cookies, you may do so through your individual
-        browser options. More detailed information about cookie management with
-        specific web browsers can be found at the browsers' respective websites.{" "}
-        <a href="https://www.privacypolicyonline.com/what-are-cookies/">
-          What Are Cookies?
-        </a>
-      </p>
-      <p>
-        <strong>Children's Information</strong>
-        <br />
-        We believe it is important to provide added protection for children
-        online. We encourage parents and guardians to spend time online with
-        their children to observe, participate in and/or monitor and guide their
-        online activity.
-        <br />
-        [YOUR SITE URL] does not knowingly collect any personally identifiable
-        information from children under the age of 13. If a parent or guardian
-        believes that [YOUR SITE URL] has in its database the
-        personally-identifiable information of a child under the age of 13,
-        please contact us immediately (using the contact in the first paragraph)
-        and we will use our best efforts to promptly remove such information
-        from our records.
-      </p>
-      <p>
-        <b>Online Privacy Policy Only</b>
-        <br />
-        This privacy policy applies only to our online activities and is valid
-        for visitors to our website and regarding information shared and/or
-        collected there.
-        <br />
-        This policy does not apply to any information collected offline or via
-        channels other than this website.
-      </p>
-      <p>
-        <b>Consent</b>
-        <br />
-        By using our website, you hereby consent to our privacy policy and agree
-        to its terms.
-      </p>
-      <p>
-        <b>Update</b>
-        <br />
-        This Privacy Policy was last updated on: Nov 1st, 2019. Should we
-        update, amend or make any changes to our privacy policy, those changes
-        will be posted here.
-      </p>
-      <p>
-        {"{"}/*{" "}
-        {" "}
-        */{"}"}
-      </p>
-      <p></p>
-    </div>
+    <main className="mx-auto max-w-7xl px-6 py-12">
+      <header className="mb-10">
+        <h2 className="text-gray-900">
+          Privacy Policy
+        </h2>
+        <p className="mt-2 text-sm text-gray-500">
+          <span className="font-medium">Effective Date:</span> {effectiveDate}{" "}
+          <br /> <span className="font-medium">Last Updated:</span>{" "}
+          {lastUpdated}
+        </p>
+      </header>
+
+      <section className="space-y-8 text-gray-700">
+        <p>
+          {farmName} (“we,” “our,” or “us”) respects your privacy. This Privacy
+          Policy explains how we collect, use, and protect the personal
+          information you provide to us when you visit our website, attend our
+          events, or purchase our products.
+        </p>
+
+        <div>
+          <h4 className="text-gray-900">
+            1. Information We Collect
+          </h4>
+          <ul className="mt-3 list-disc space-y-2 pl-6">
+            <li>
+              <span className="font-medium">
+                Personal Information you provide:
+              </span>{" "}
+              name, email address, phone number, billing/shipping details when
+              you sign up for our newsletter, register for events or camps, or
+              place an order.
+            </li>
+            <li>
+              <span className="font-medium">Non-Personal Information:</span>{" "}
+              browser, device, and usage data (via cookies or analytics tools)
+              to help improve the site.
+            </li>
+            <li>
+              <span className="font-medium">Event &amp; Camp Information:</span>{" "}
+              if you register yourself or your children, we may collect
+              emergency contacts, allergies, or dietary restrictions.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            2. How We Use Your Information
+          </h4>
+          <ul className="mt-1 list-disc space-y-2 pl-6">
+            <li>Process and fulfill orders, registrations, and payments.</li>
+            <li>
+              Communicate about events, camps, product updates, and promotions.
+            </li>
+            <li>Improve our website, offerings, and community programs.</li>
+            <li>Comply with legal and safety requirements.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            3. Sharing of Information
+          </h4>
+          <p className="mt-1">
+            We do <span className="font-semibold">not sell or rent</span>{" "}
+            personal information. We may share information only with:
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-6">
+            <li>
+              Trusted service providers (e.g., payment, email, hosting) who
+              assist our operations.
+            </li>
+            <li>Authorities when required by law or legal process.</li>
+            <li>
+              Parties necessary to protect the safety of our customers, staff,
+              or community.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            4. Cookies &amp; Tracking
+          </h4>
+          <h6 className="mt-1">
+            We may use cookies or similar technologies to understand traffic and
+            improve user experience. You can disable cookies in your browser
+            settings, but some features may not function properly.
+          </h6>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            5. Children’s Privacy
+          </h4>
+          <h6 className="mt-1">
+            We welcome families to our events and camps. We collect children’s
+            information only as needed for registration and safety, and with a
+            parent/guardian’s consent. We do not knowingly collect personal
+            information from children online.
+          </h6>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            6. Data Security
+          </h4>
+          <h6 className="mt-1">
+            We take reasonable steps to protect personal information; however,
+            no method of online transmission or storage is 100% secure.
+          </h6>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            7. Your Choices
+          </h4>
+          <ul className="mt-1 list-disc space-y-2 pl-6">
+            <h6>
+            <li>
+              Unsubscribe from marketing emails at any time (see unsubscribe
+              link).
+            </li>
+            <li>
+              Request access, correction, or deletion of your personal
+              information by contacting us.
+            </li>
+            </h6>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">
+            8. Changes to This Policy
+          </h4>
+          <h6 className="mt-1">
+            We may update this Privacy Policy from time to time. The most recent
+            version will always be posted here with the “Last Updated” date.
+          </h6>
+        </div>
+
+        <div>
+          <h4 className="text-gray-900">9. Contact Us</h4>
+          <address className="mt-3 not-italic">
+            <div className="font-medium">{farmName}</div>
+            <div>1234 Main St, Tallahassee, FL 32301</div>
+            <div>+1 (800) 123-4567</div>
+            <div>
+              <a className="underline" href="mailto:info@localfarm.com">
+                info@localfarm.com
+              </a>
+            </div>
+            
+          </address>
+        </div>
+      </section>
+    </main>
   );
 };
 

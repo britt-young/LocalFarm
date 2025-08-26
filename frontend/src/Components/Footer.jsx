@@ -36,7 +36,12 @@ const Footer = () => {
               {/* <!-- Social network icons container --> */}
               <div className="flex items-center my-4 ">
                 {/* Facebook */}
-                <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#1877f2"
@@ -46,7 +51,12 @@ const Footer = () => {
                   </svg>
                 </a>
                 {/* X/ Twitter */}
-                <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4 ">
+                <a
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-6 [&>svg]:h-4 [&>svg]:w-4 "
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="black"
@@ -56,7 +66,12 @@ const Footer = () => {
                   </svg>
                 </a>
                 {/* Google */}
-                <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#ea4335"
@@ -66,7 +81,12 @@ const Footer = () => {
                   </svg>
                 </a>
                 {/* Instagram */}
-                <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#c13584"
@@ -76,7 +96,12 @@ const Footer = () => {
                   </svg>
                 </a>
                 {/* LinkedIn */}
-                <a href="#!" className="me-6 [&>svg]:h-4 [&>svg]:w-4">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-6 [&>svg]:h-4 [&>svg]:w-4"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#0077b5"
@@ -96,7 +121,7 @@ const Footer = () => {
                       All products sourced from Local Farm land and packaged
                       on-site
                     </p> */}
-                    <ul >
+                    <ul>
                       <li>1234 Main St, Tallahassee, FL 32301</li>
                       <li className="indent-2">+1 (800) 123-4567</li>
                     </ul>
@@ -104,7 +129,7 @@ const Footer = () => {
                 </div>
 
                 {/* Market Booth */}
-                <div className="block min-w-full text-left">
+                <div className="block min-w-full text-left mb-4">
                   <div>
                     <h5 className="font-bold">Market Booth</h5>
                     <h6>Booth #1111, Town Sqaure</h6>
