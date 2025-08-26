@@ -1,7 +1,7 @@
-import NavBar from "../Temps/NavBar";
+import NavBar from "../Components/NavBar";
 import { Outlet } from "react-router-dom";
-import Footer from "../Temps/Footer";
-import ScrollToTop from "../Temps/ScrollToTop";
+import Footer from "../Components/Footer";
+import ScrollToTop from "../Components/ScrollToTop";
 
 const RootLayout = () => {
   return (
