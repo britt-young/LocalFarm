@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid-1 grid md:grid-cols-2 gap-10 lg:gap-60 lg:max-w-7xl lg:mx-auto p-2">
           {/* <!-- Company Section --> */}
           <div className="flex flex-col items-start">
-            <img src={logo} alt="Logo" className="h-40 mb-4 mx-auto md:mx-0" />
+            <img src={logo} alt="Logo" className="h-40 w-fit mb-4 mx-auto md:mx-0" />
             <p className="mb-4">
               We are a community-driven agricultural resource connecting local
               farmers and local families. Our mission is to promote sustainable
