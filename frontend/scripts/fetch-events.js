@@ -8,9 +8,9 @@ import fetch from "node-fetch";
 
 dotenv.config();
 
-export const AIRTABLE_BASE_ID = import.meta.env.VITE_AIRTABLE_BASE_ID;
-export const AIRTABLE_TABLE_NAME = "Events";
-export const AIRTABLE_PAT = import.meta.env.VITE_AIRTABLE_PAT;
+const AIRTABLE_BASE_ID = process.env.AIRTABLE_BASE_ID;
+const AIRTABLE_TABLE_NAME = "Events";
+const AIRTABLE_PAT = process.env.AIRTABLE_PAT;
 
 if (!AIRTABLE_BASE_ID || !AIRTABLE_PAT) {
   console.error("❌ Missing Airtable credentials in environment variables.");
