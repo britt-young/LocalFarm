@@ -12,7 +12,7 @@ const AboutStats = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-lime-500"> 1 </span>
                         </h2> */}
                         <h4 className="mt-4 text-gray-900">Petting Zoo</h4>
-                        <p className="mt-0.5 text-gray-500">An improved supply chain between growers and communities</p>
+                        <p className="mt-0.5 text-gray-500">Come hangout with your favorite farm animals, you can feed and pet them!</p>
                     </div>
 
                     <div>
@@ -21,7 +21,7 @@ const AboutStats = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-lime-500"> 2 </span>
                         </h2> */}
                         <h4 className="mt-4 text-gray-900">Rodeo Stadium</h4>
-                        <p className="mt-0.5 text-gray-500">Reduced environmental impact from food transport operations</p>
+                        <p className="mt-0.5 text-gray-500">Barrel racing, hog-tying, and sheep rangling! Check our event calendar for the next rodeo show</p>
                     </div>
 
                     <div>
@@ -30,7 +30,7 @@ const AboutStats = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-lime-500"> 3 </span>
                         </h2> */}
                         <h4 className="mt-4 text-gray-900">Local Wild Honey</h4>
-                        <p className="mt-0.5 text-gray-500">Increased community ability to source a dependable food supply</p>
+                        <p className="mt-0.5 text-gray-500">Home to over 100,000 honey bees pollinating local flowers to produce the finest honey!</p>
                     </div>
 
                     <div>
@@ -39,7 +39,7 @@ const AboutStats = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-900 to-lime-500"> 4 </span>
                         </h2> */}
                         <h4 className="mt-4 text-gray-900">50+ Acre Corn Maze</h4>
-                        <p className="mt-0.5 text-gray-500">Best growing practices that foster environmental conservation</p>
+                        <p className="mt-0.5 text-gray-500">Get lost in our giant seasonal corn maze, a fun challenge for all ages!</p>
                     </div>
                 </div>
   )

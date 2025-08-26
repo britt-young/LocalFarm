@@ -6,7 +6,7 @@ const MissionStatement = () => {
     <div className="">
       {/* Values/Mission About*/}
 
-      <section className="bg-zinc-50 py-16 lg:py-10">
+      <section className="bg-zinc-50 py-16 lg:py-20">
         <div className="max-w-7xl px-4 mx-auto px-6 lg:px-8">
           <div className="text-center">
             <h3>
