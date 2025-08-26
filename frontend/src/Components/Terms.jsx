@@ -1,4 +1,3 @@
-
 const Terms = () => {
   const effectiveDate = "August 26, 2025";
   const lastUpdated = "August 26, 2025";

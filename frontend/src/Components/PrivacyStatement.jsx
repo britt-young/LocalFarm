@@ -6,9 +6,7 @@ const PrivacyStatement = () => {
   return (
     <main className="mx-auto max-w-7xl px-6 py-12">
       <header className="mb-10">
-        <h2 className="text-gray-900">
-          Privacy Policy
-        </h2>
+        <h2 className="text-gray-900">Privacy Policy</h2>
         <p className="mt-2 text-sm text-gray-500">
           <span className="font-medium">Effective Date:</span> {effectiveDate}{" "}
           <br /> <span className="font-medium">Last Updated:</span>{" "}
@@ -25,9 +23,7 @@ const PrivacyStatement = () => {
         </p>
 
         <div>
-          <h4 className="text-gray-900">
-            1. Information We Collect
-          </h4>
+          <h4 className="text-gray-900">1. Information We Collect</h4>
           <ul className="mt-3 list-disc space-y-2 pl-6">
             <li>
               <span className="font-medium">
@@ -51,9 +47,7 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            2. How We Use Your Information
-          </h4>
+          <h4 className="text-gray-900">2. How We Use Your Information</h4>
           <ul className="mt-1 list-disc space-y-2 pl-6">
             <li>Process and fulfill orders, registrations, and payments.</li>
             <li>
@@ -65,9 +59,7 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            3. Sharing of Information
-          </h4>
+          <h4 className="text-gray-900">3. Sharing of Information</h4>
           <p className="mt-1">
             We do <span className="font-semibold">not sell or rent</span>{" "}
             personal information. We may share information only with:
@@ -86,9 +78,7 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            4. Cookies &amp; Tracking
-          </h4>
+          <h4 className="text-gray-900">4. Cookies &amp; Tracking</h4>
           <h6 className="mt-1">
             We may use cookies or similar technologies to understand traffic and
             improve user experience. You can disable cookies in your browser
@@ -97,9 +87,7 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            5. Children’s Privacy
-          </h4>
+          <h4 className="text-gray-900">5. Children’s Privacy</h4>
           <h6 className="mt-1">
             We welcome families to our events and camps. We collect children’s
             information only as needed for registration and safety, and with a
@@ -109,9 +97,7 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            6. Data Security
-          </h4>
+          <h4 className="text-gray-900">6. Data Security</h4>
           <h6 className="mt-1">
             We take reasonable steps to protect personal information; however,
             no method of online transmission or storage is 100% secure.
@@ -119,27 +105,23 @@ const PrivacyStatement = () => {
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            7. Your Choices
-          </h4>
+          <h4 className="text-gray-900">7. Your Choices</h4>
           <ul className="mt-1 list-disc space-y-2 pl-6">
             <h6>
-            <li>
-              Unsubscribe from marketing emails at any time (see unsubscribe
-              link).
-            </li>
-            <li>
-              Request access, correction, or deletion of your personal
-              information by contacting us.
-            </li>
+              <li>
+                Unsubscribe from marketing emails at any time (see unsubscribe
+                link).
+              </li>
+              <li>
+                Request access, correction, or deletion of your personal
+                information by contacting us.
+              </li>
             </h6>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-gray-900">
-            8. Changes to This Policy
-          </h4>
+          <h4 className="text-gray-900">8. Changes to This Policy</h4>
           <h6 className="mt-1">
             We may update this Privacy Policy from time to time. The most recent
             version will always be posted here with the “Last Updated” date.
@@ -157,7 +139,6 @@ const PrivacyStatement = () => {
                 info@localfarm.com
               </a>
             </div>
-            
           </address>
         </div>
       </section>

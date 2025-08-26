@@ -3,7 +3,7 @@ import PrivacyStatement from '../Components/PrivacyStatement'
 
 const Privacy = () => {
   return (
-    <div className='m-40'>
+    <div className='m-10'>
       <PrivacyStatement />
     </div>
   )

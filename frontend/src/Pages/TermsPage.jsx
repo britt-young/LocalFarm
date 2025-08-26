@@ -2,7 +2,9 @@ import Terms from "../Components/Terms"
 
 const TermsPage = () => {
   return (
-    <Terms />
+    <div className="m-10">
+      <Terms />
+    </div>
   )
 }
 
